@@ -1,0 +1,3 @@
+/home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir
+/home/st/toffaletti/armhf/extensions/CMakeFiles/test-cares-st.dir
+/home/st/toffaletti/armhf/extensions/CMakeFiles/testdns.dir

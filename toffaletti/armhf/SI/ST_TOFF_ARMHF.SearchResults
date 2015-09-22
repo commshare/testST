@@ -1,0 +1,11 @@
+---- st_recvmsg Matches (10 in 4 files) ----
+Io.c (armhf):int st_recvmsg(_st_netfd_t *fd, struct msghdr *msg, int flags,
+Public.h (armhf):extern int st_recvmsg(st_netfd_t fd, struct msghdr *msg, int flags,
+Reference.html (armhf\docs):<DL><DD><A HREF=#recvmsg>st_recvmsg()</A></DD></DL>
+Reference.html (armhf\docs):<DD><A HREF=#recvmsg>st_recvmsg()</A></DD>
+Reference.html (armhf\docs):<H4>st_recvmsg()</H4>
+Reference.html (armhf\docs):int st_recvmsg(st_netfd_t fd, struct msghdr *msg, int flags,
+Reference.html (armhf\docs):<TT>st_recvmsg()</TT> has the following parameters:<P>
+Reference.html (armhf\docs):<TT>st_recvmsg()</TT> blocks the calling thread until one or more bytes are
+Reference.html (armhf\docs):<DD><A HREF=#recvmsg>st_recvmsg()</A></DD>
+St.h (armhf):extern int st_recvmsg(st_netfd_t fd, struct msghdr *msg, int flags,

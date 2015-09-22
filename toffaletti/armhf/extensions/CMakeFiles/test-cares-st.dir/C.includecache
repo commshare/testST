@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/cares-st.c
+/home/st/toffaletti/armhf/extensions/cares-st.c
 st.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st.h
+/home/st/toffaletti/armhf/extensions/st.h
 st_dns.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 ares.h
 -
 stdio.h
@@ -30,7 +30,7 @@ arpa/inet.h
 netdb.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 ares.h
 -
 arpa/inet.h
@@ -38,11 +38,11 @@ arpa/inet.h
 netdb.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/test-cares-st.c
+/home/st/toffaletti/armhf/extensions/test-cares-st.c
 st.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st.h
+/home/st/toffaletti/armhf/extensions/st.h
 st_dns.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 stdio.h
 -
 stdlib.h

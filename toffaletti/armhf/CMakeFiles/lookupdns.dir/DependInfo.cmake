@@ -4,22 +4,22 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/lookupdns.c" "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/lookupdns.dir/examples/lookupdns.c.o"
-  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/res.c" "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/lookupdns.dir/examples/res.c.o"
+  "/home/st/toffaletti/armhf/examples/lookupdns.c" "/home/st/toffaletti/armhf/CMakeFiles/lookupdns.dir/examples/lookupdns.c.o"
+  "/home/st/toffaletti/armhf/examples/res.c" "/home/st/toffaletti/armhf/CMakeFiles/lookupdns.dir/examples/res.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
-  "LINUX"
   "MD_HAVE_EPOLL"
-  "NVALGRIND"
+  "LINUX"
   "_GNU_SOURCE"
+  "NVALGRIND"
   )
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/st.dir/DependInfo.cmake"
+  "/home/st/toffaletti/armhf/CMakeFiles/st.dir/DependInfo.cmake"
   )
 
 # The include file search paths:

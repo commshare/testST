@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/bio_netfd.c
+/home/st/toffaletti/armhf/extensions/bio_netfd.c
 openssl/ssl.h
 -
 st_ssl.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_ssl.h
+/home/st/toffaletti/armhf/extensions/st_ssl.h
 st_dns.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 arpa/inet.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/cares-st.c
+/home/st/toffaletti/armhf/extensions/cares-st.c
 st.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st.h
+/home/st/toffaletti/armhf/extensions/st.h
 st_dns.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 ares.h
 -
 stdio.h
@@ -40,15 +40,15 @@ arpa/inet.h
 netdb.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/ssl.c
+/home/st/toffaletti/armhf/extensions/ssl.c
 st_ssl.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_ssl.h
+/home/st/toffaletti/armhf/extensions/st_ssl.h
 openssl/ssl.h
 -
 openssl/err.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_dns.h
+/home/st/toffaletti/armhf/extensions/st_dns.h
 ares.h
 -
 arpa/inet.h
@@ -56,11 +56,11 @@ arpa/inet.h
 netdb.h
 -
 
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st_ssl.h
+/home/st/toffaletti/armhf/extensions/st_ssl.h
 openssl/bio.h
 -
 st.h
-/home/zhangbin/xlive/stateThreads/state-threads/extensions/st.h
+/home/st/toffaletti/armhf/extensions/st.h
 
 st.h
 unistd.h

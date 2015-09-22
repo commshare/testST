@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 1985, 1988, 1993
  *    The Regents of the University of California.  All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
@@ -17,7 +17,7 @@
  * 4. Neither the name of the University nor the names of its contributors
  *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -35,16 +35,16 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
- * are met: 
+ * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
  * 3. Neither the name of Silicon Graphics, Inc. nor the names of its
  *    contributors may be used to endorse or promote products derived from
- *    this software without specific prior written permission. 
+ *    this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -76,6 +76,7 @@
 #include "st.h"
 
 #include "res.h"
+#include"sc_log.h"
 
 #define MAXPACKET 1024
 
@@ -162,8 +163,8 @@ static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
     /* Wait for reply */
     do {
       len = st_recvfrom(nfd, buf, blen, NULL, NULL, timeout);
-      if (len <= 0)
-	break;
+      if (len <= 0) /*一直接收不到应答消息啊*/
+		break;
     } while (id != hp->id);
 
     if (len < HFIXEDSZ) {
@@ -185,13 +186,13 @@ static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
       case SERVFAIL:
 	h_errno = TRY_AGAIN;
 	break;
-      case NOERROR:
+      case NOERROR: /*走这里*/
 	h_errno = NO_DATA;
 	break;
       case FORMERR:
       case NOTIMP:
       case REFUSED:
-      default:
+      default: /*走这里*/
 	h_errno = NO_RECOVERY;
       }
       continue;
@@ -268,7 +269,15 @@ int dns_getaddr(const char *host, struct in_addr *addr, st_utime_t timeout)
    */
   if (dots >= _res.ndots) {
     if (query_domain(nfd, host, addr, timeout) == 0)
-      CLOSE_AND_RETURN(0);
+    {
+		/*貌似我的query域名就是返回0，只好关闭并且退出了*/
+		LOGD("query_domain return 0");
+		LOGD("query_domain return 0");
+		CLOSE_AND_RETURN(0);
+		//下面这句话不被执行，上面的return直接退出了这个函数
+		slogi("query_domain WILL NOT HERE");
+
+    }
     if (h_errno == NETDB_INTERNAL && errno == EINTR)
       CLOSE_AND_RETURN(-1);
     tried_as_is = 1;

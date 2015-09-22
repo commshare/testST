@@ -1,30 +1,30 @@
-/* 
+/*
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
+ *
  * Software distributed under the License is distributed on an "AS
  * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
- * 
+ *
  * The Original Code is the Netscape Portable Runtime library.
- * 
+ *
  * The Initial Developer of the Original Code is Netscape
- * Communications Corporation.  Portions created by Netscape are 
+ * Communications Corporation.  Portions created by Netscape are
  * Copyright (C) 1994-2000 Netscape Communications Corporation.  All
  * Rights Reserved.
- * 
+ *
  * Contributor(s):  Silicon Graphics, Inc.
- * 
+ *
  * Portions created by SGI are Copyright (C) 2000-2001 Silicon
  * Graphics, Inc.  All Rights Reserved.
- * 
+ *
  * Alternatively, the contents of this file may be used under the
  * terms of the GNU General Public License Version 2 or later (the
- * "GPL"), in which case the provisions of the GPL are applicable 
- * instead of those above.  If you wish to allow use of your 
+ * "GPL"), in which case the provisions of the GPL are applicable
+ * instead of those above.  If you wish to allow use of your
  * version of this file only under the terms of the GPL and not to
  * allow others to use your version of this file under the MPL,
  * indicate your decision by deleting the provisions above and
@@ -47,6 +47,7 @@
 #include <errno.h>
 #include <pthread.h>
 #include "common.h"
+#include"sc_log.h"
 
 #ifndef NVALGRIND
 #include <valgrind/valgrind.h>
@@ -97,7 +98,7 @@ int st_poll(struct pollfd *pds, int npds, st_utime_t timeout)
     /* If we timed out, the pollq might still be on the ioq. Remove it */
     _ST_DEL_IOQ(pq);
     (*_st_eventsys->pollset_del)(pds, npds);
-  } else {
+  } else { //走这里
     /* Count the number of ready descriptors */
     for (pd = pds; pd < epd; pd++) {
       if (pd->revents)
@@ -539,6 +540,7 @@ void st_thread_interrupt(_st_thread_t *thread)
 _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
 			       int joinable, int stk_size)
 {
+	slogi("st_thread_create begin");
   _st_thread_t *thread;
   _st_stack_t *stack;
   void **ptds;
@@ -547,7 +549,7 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   char *bsp;
 #endif
 
-  /* Adjust stack size */
+  /* Adjust stack size 调整寄存器栈大小*/
   if (stk_size == 0)
     stk_size = ST_DEFAULT_STACK_SIZE;
   stk_size = ((stk_size + _ST_PAGE_SIZE - 1) / _ST_PAGE_SIZE) * _ST_PAGE_SIZE;
@@ -595,6 +597,7 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   stack->sp = sp + _ST_STACK_PAD_SIZE;
 #else
 #error Unknown OS
+LOGE("error Unknown OS");
 #endif
 
   memset(thread, 0, sizeof(_st_thread_t));
@@ -607,8 +610,9 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   thread->arg = arg;
 
 #ifndef __ia64__
+   /*会走这里*/
   _ST_INIT_CONTEXT(thread, stack->sp, _st_thread_main);
-#else
+#else /*这个是__ia64__*/
   _ST_INIT_CONTEXT(thread, stack->sp, stack->bsp, _st_thread_main);
 #endif
 
@@ -633,6 +637,7 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   thread->stack->valgrind_stack_id =
     VALGRIND_STACK_REGISTER(thread->stack->stk_top, thread->stack->stk_bottom);
 #endif
+	slogi("st_thread_create end");
 
   return thread;
 }

@@ -4,16 +4,16 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
- * are met: 
+ * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
  * 3. Neither the name of Silicon Graphics, Inc. nor the names of its
  *    contributors may be used to endorse or promote products derived from
- *    this software without specific prior written permission. 
+ *    this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -39,6 +39,7 @@
 #include <netdb.h>
 #include "st.h"
 #include "res.h"
+#include"sc_log.h"
 
 #if !defined(NETDB_INTERNAL) && defined(h_NETDB_INTERNAL)
 #define NETDB_INTERNAL h_NETDB_INTERNAL
@@ -50,17 +51,34 @@
 
 static void *do_resolve(void *host)
 {
+
+	slogi("do_resolve");
+#if 0
   struct in_addr addr;
 
   /* Use dns_getaddr() instead of gethostbyname(3) to get IP address */
-  if (dns_getaddr(host, &addr, TIMEOUT) < 0) {
+  #if 1
+    int ret=-99;
+  ret=dns_getaddr(host, &addr, TIMEOUT);
+  LOGD("dns_getaddr RET[%d]",ret);
+  if ( ret< 0) {
+  #else
+    if ( dns_getaddr(host, &addr, TIMEOUT)< 0) {
+
+  #endif
+  	/*PCÉÏ»áÊä³öÐ¡ÓÚ0£¬tvboxÉÏÉ¶¶¼Ã»ÓÐÊä³ö°¡*/
     fprintf(stderr, "dns_getaddr: can't resolve %s: ", (char *)host);
     if (h_errno == NETDB_INTERNAL)
       perror("");
     else
       herror("");
-  } else
+  } else /*ÕâÖÖÇé¿ö¾ÍÊÇÕÒµ½ÁË*/
     printf("%-40s %s\n", (char *)host, inet_ntoa(addr));
+#else
+	int count=20;
+	while(count--)
+      LOGD("just for test thread func ....");
+#endif
 
   return NULL;
 }
@@ -73,6 +91,7 @@ static void *do_resolve(void *host)
  */
 int main(int argc, char *argv[])
 {
+	slogi("argc[%d]",argc);
   int i;
 
   if (argc < 2) {
@@ -85,7 +104,9 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
+	slogi("---before for--argc[%d]",argc);
   for (i = 1; i < argc; i++) {
+  	slogi("====%d=[%s]=",i,argv[i]);
     /* Create a separate thread for each host name */
     if (st_thread_create(do_resolve, argv[i], 0, 0) == NULL) {
       perror("st_thread_create");
@@ -95,7 +116,7 @@ int main(int argc, char *argv[])
 
   st_thread_exit(NULL);
 
-  /* NOTREACHED */
+  /* NOTREACHED ÍøÂç²»¿É´ïå */
   return 1;
 }
 

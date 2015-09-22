@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
 
 # Include any dependencies generated for this target.
 include CMakeFiles/st.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/st.dir/flags.make
 
 CMakeFiles/st.dir/md.S.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/md.S.o: md.S
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/md.S.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/md.S.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/md.S
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/md.S.o   -c /home/st/toffaletti/armhf/md.S
 
 CMakeFiles/st.dir/md.S.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/md.S.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/md.S > CMakeFiles/st.dir/md.S.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/md.S > CMakeFiles/st.dir/md.S.i
 
 CMakeFiles/st.dir/md.S.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/md.S.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/md.S -o CMakeFiles/st.dir/md.S.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/md.S -o CMakeFiles/st.dir/md.S.s
 
 CMakeFiles/st.dir/md.S.o.requires:
 .PHONY : CMakeFiles/st.dir/md.S.o.requires
@@ -77,17 +74,17 @@ CMakeFiles/st.dir/md.S.o.provides.build: CMakeFiles/st.dir/md.S.o
 
 CMakeFiles/st.dir/event.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/event.c.o: event.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/event.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/event.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/event.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/event.c.o   -c /home/st/toffaletti/armhf/event.c
 
 CMakeFiles/st.dir/event.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/event.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/event.c > CMakeFiles/st.dir/event.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/event.c > CMakeFiles/st.dir/event.c.i
 
 CMakeFiles/st.dir/event.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/event.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/event.c -o CMakeFiles/st.dir/event.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/event.c -o CMakeFiles/st.dir/event.c.s
 
 CMakeFiles/st.dir/event.c.o.requires:
 .PHONY : CMakeFiles/st.dir/event.c.o.requires
@@ -100,17 +97,17 @@ CMakeFiles/st.dir/event.c.o.provides.build: CMakeFiles/st.dir/event.c.o
 
 CMakeFiles/st.dir/io.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/io.c.o: io.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/io.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/io.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/io.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/io.c.o   -c /home/st/toffaletti/armhf/io.c
 
 CMakeFiles/st.dir/io.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/io.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/io.c > CMakeFiles/st.dir/io.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/io.c > CMakeFiles/st.dir/io.c.i
 
 CMakeFiles/st.dir/io.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/io.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/io.c -o CMakeFiles/st.dir/io.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/io.c -o CMakeFiles/st.dir/io.c.s
 
 CMakeFiles/st.dir/io.c.o.requires:
 .PHONY : CMakeFiles/st.dir/io.c.o.requires
@@ -123,17 +120,17 @@ CMakeFiles/st.dir/io.c.o.provides.build: CMakeFiles/st.dir/io.c.o
 
 CMakeFiles/st.dir/key.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/key.c.o: key.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_4)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_4)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/key.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/key.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/key.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/key.c.o   -c /home/st/toffaletti/armhf/key.c
 
 CMakeFiles/st.dir/key.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/key.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/key.c > CMakeFiles/st.dir/key.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/key.c > CMakeFiles/st.dir/key.c.i
 
 CMakeFiles/st.dir/key.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/key.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/key.c -o CMakeFiles/st.dir/key.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/key.c -o CMakeFiles/st.dir/key.c.s
 
 CMakeFiles/st.dir/key.c.o.requires:
 .PHONY : CMakeFiles/st.dir/key.c.o.requires
@@ -146,17 +143,17 @@ CMakeFiles/st.dir/key.c.o.provides.build: CMakeFiles/st.dir/key.c.o
 
 CMakeFiles/st.dir/sched.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/sched.c.o: sched.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_5)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_5)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/sched.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/sched.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sched.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/sched.c.o   -c /home/st/toffaletti/armhf/sched.c
 
 CMakeFiles/st.dir/sched.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/sched.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sched.c > CMakeFiles/st.dir/sched.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/sched.c > CMakeFiles/st.dir/sched.c.i
 
 CMakeFiles/st.dir/sched.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/sched.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sched.c -o CMakeFiles/st.dir/sched.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/sched.c -o CMakeFiles/st.dir/sched.c.s
 
 CMakeFiles/st.dir/sched.c.o.requires:
 .PHONY : CMakeFiles/st.dir/sched.c.o.requires
@@ -169,17 +166,17 @@ CMakeFiles/st.dir/sched.c.o.provides.build: CMakeFiles/st.dir/sched.c.o
 
 CMakeFiles/st.dir/stk.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/stk.c.o: stk.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_6)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_6)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/stk.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/stk.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/stk.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/stk.c.o   -c /home/st/toffaletti/armhf/stk.c
 
 CMakeFiles/st.dir/stk.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/stk.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/stk.c > CMakeFiles/st.dir/stk.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/stk.c > CMakeFiles/st.dir/stk.c.i
 
 CMakeFiles/st.dir/stk.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/stk.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/stk.c -o CMakeFiles/st.dir/stk.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/stk.c -o CMakeFiles/st.dir/stk.c.s
 
 CMakeFiles/st.dir/stk.c.o.requires:
 .PHONY : CMakeFiles/st.dir/stk.c.o.requires
@@ -192,17 +189,17 @@ CMakeFiles/st.dir/stk.c.o.provides.build: CMakeFiles/st.dir/stk.c.o
 
 CMakeFiles/st.dir/sync.c.o: CMakeFiles/st.dir/flags.make
 CMakeFiles/st.dir/sync.c.o: sync.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_7)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_7)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/st.dir/sync.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/sync.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sync.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st.dir/sync.c.o   -c /home/st/toffaletti/armhf/sync.c
 
 CMakeFiles/st.dir/sync.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st.dir/sync.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sync.c > CMakeFiles/st.dir/sync.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/sync.c > CMakeFiles/st.dir/sync.c.i
 
 CMakeFiles/st.dir/sync.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st.dir/sync.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/sync.c -o CMakeFiles/st.dir/sync.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/sync.c -o CMakeFiles/st.dir/sync.c.s
 
 CMakeFiles/st.dir/sync.c.o.requires:
 .PHONY : CMakeFiles/st.dir/sync.c.o.requires
@@ -257,6 +254,6 @@ CMakeFiles/st.dir/clean:
 .PHONY : CMakeFiles/st.dir/clean
 
 CMakeFiles/st.dir/depend:
-	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/st.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf/CMakeFiles/st.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/st.dir/depend
 

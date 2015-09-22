@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
 
 # Include any dependencies generated for this target.
 include CMakeFiles/server.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/server.dir/flags.make
 
 CMakeFiles/server.dir/examples/server.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/examples/server.c.o: examples/server.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/server.dir/examples/server.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/server.dir/examples/server.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/server.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/server.dir/examples/server.c.o   -c /home/st/toffaletti/armhf/examples/server.c
 
 CMakeFiles/server.dir/examples/server.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/server.dir/examples/server.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/server.c > CMakeFiles/server.dir/examples/server.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/examples/server.c > CMakeFiles/server.dir/examples/server.c.i
 
 CMakeFiles/server.dir/examples/server.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/examples/server.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/server.c -o CMakeFiles/server.dir/examples/server.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/examples/server.c -o CMakeFiles/server.dir/examples/server.c.s
 
 CMakeFiles/server.dir/examples/server.c.o.requires:
 .PHONY : CMakeFiles/server.dir/examples/server.c.o.requires
@@ -77,17 +74,17 @@ CMakeFiles/server.dir/examples/server.c.o.provides.build: CMakeFiles/server.dir/
 
 CMakeFiles/server.dir/examples/error.c.o: CMakeFiles/server.dir/flags.make
 CMakeFiles/server.dir/examples/error.c.o: examples/error.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/server.dir/examples/error.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/server.dir/examples/error.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/error.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/server.dir/examples/error.c.o   -c /home/st/toffaletti/armhf/examples/error.c
 
 CMakeFiles/server.dir/examples/error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/server.dir/examples/error.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/error.c > CMakeFiles/server.dir/examples/error.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/examples/error.c > CMakeFiles/server.dir/examples/error.c.i
 
 CMakeFiles/server.dir/examples/error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/server.dir/examples/error.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/error.c -o CMakeFiles/server.dir/examples/error.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/examples/error.c -o CMakeFiles/server.dir/examples/error.c.s
 
 CMakeFiles/server.dir/examples/error.c.o.requires:
 .PHONY : CMakeFiles/server.dir/examples/error.c.o.requires
@@ -127,6 +124,6 @@ CMakeFiles/server.dir/clean:
 .PHONY : CMakeFiles/server.dir/clean
 
 CMakeFiles/server.dir/depend:
-	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf/CMakeFiles/server.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/server.dir/depend
 

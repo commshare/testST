@@ -1,30 +1,30 @@
-/* 
+/*
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
+ *
  * Software distributed under the License is distributed on an "AS
  * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
- * 
+ *
  * The Original Code is the Netscape Portable Runtime library.
- * 
+ *
  * The Initial Developer of the Original Code is Netscape
- * Communications Corporation.  Portions created by Netscape are 
+ * Communications Corporation.  Portions created by Netscape are
  * Copyright (C) 1994-2000 Netscape Communications Corporation.  All
  * Rights Reserved.
- * 
+ *
  * Contributor(s):  Silicon Graphics, Inc.
- * 
+ *
  * Portions created by SGI are Copyright (C) 2000-2001 Silicon
  * Graphics, Inc.  All Rights Reserved.
- * 
+ *
  * Alternatively, the contents of this file may be used under the
  * terms of the GNU General Public License Version 2 or later (the
- * "GPL"), in which case the provisions of the GPL are applicable 
- * instead of those above.  If you wish to allow use of your 
+ * "GPL"), in which case the provisions of the GPL are applicable
+ * instead of those above.  If you wish to allow use of your
  * version of this file only under the terms of the GPL and not to
  * allow others to use your version of this file under the MPL,
  * indicate your decision by deleting the provisions above and
@@ -52,7 +52,7 @@
 #include <signal.h>
 #include <errno.h>
 #include "common.h"
-
+#include"sc_log.h"
 
 #if EAGAIN != EWOULDBLOCK
 #define _IO_NOT_READY_ERROR  ((errno == EAGAIN) || (errno == EWOULDBLOCK))
@@ -179,8 +179,27 @@ _st_netfd_t *st_netfd_open_socket(int osfd)
 
 int st_netfd_close(_st_netfd_t *fd)
 {
+	//确认了，fd是非空的
+//	if(fd==NULL)
+//		LOGE("st_netfd_close fd is NULL ");
+//	else
+//		LOGD("st_netfd_close fd not  NULL ");
+
+#if 0
+//这么写就会有段错误啊，fd不是空，那是神马情况啊
+  	LOGD("st_netfd_close before fd_close, fd->osfd[%d]",fd->osfd);
+#else
+  	LOGD("st_netfd_close before fd_close 1");
+#endif
+  	LOGD("st_netfd_close before fd_close 2");
+
+   //执行下面的这句话就挂了
   if ((*_st_eventsys->fd_close)(fd->osfd) < 0)
-    return -1;
+  {
+  	LOGD("(*_st_eventsys->fd_close)(fd->osfd) < 0 ");
+     return -1;
+  }
+	LOGD("st_netfd_close 222 ");
 
   st_netfd_free(fd);
   return close(fd->osfd);

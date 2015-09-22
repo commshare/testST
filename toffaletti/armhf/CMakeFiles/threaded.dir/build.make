@@ -34,14 +34,11 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
-# The program to use to edit the cache.
-CMAKE_EDIT_COMMAND = /usr/bin/ccmake
-
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
 
 # Include any dependencies generated for this target.
 include CMakeFiles/threaded.dir/depend.make
@@ -54,17 +51,17 @@ include CMakeFiles/threaded.dir/flags.make
 
 CMakeFiles/threaded.dir/examples/threaded.c.o: CMakeFiles/threaded.dir/flags.make
 CMakeFiles/threaded.dir/examples/threaded.c.o: examples/threaded.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object CMakeFiles/threaded.dir/examples/threaded.c.o"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threaded.dir/examples/threaded.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/threaded.c
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/threaded.dir/examples/threaded.c.o   -c /home/st/toffaletti/armhf/examples/threaded.c
 
 CMakeFiles/threaded.dir/examples/threaded.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/threaded.dir/examples/threaded.c.i"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/threaded.c > CMakeFiles/threaded.dir/examples/threaded.c.i
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/examples/threaded.c > CMakeFiles/threaded.dir/examples/threaded.c.i
 
 CMakeFiles/threaded.dir/examples/threaded.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/threaded.dir/examples/threaded.c.s"
-	/bin/cc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/examples/threaded.c -o CMakeFiles/threaded.dir/examples/threaded.c.s
+	/usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/examples/threaded.c -o CMakeFiles/threaded.dir/examples/threaded.c.s
 
 CMakeFiles/threaded.dir/examples/threaded.c.o.requires:
 .PHONY : CMakeFiles/threaded.dir/examples/threaded.c.o.requires
@@ -101,6 +98,6 @@ CMakeFiles/threaded.dir/clean:
 .PHONY : CMakeFiles/threaded.dir/clean
 
 CMakeFiles/threaded.dir/depend:
-	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/CMakeFiles/threaded.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf /home/st/toffaletti/armhf/CMakeFiles/threaded.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/threaded.dir/depend
 
