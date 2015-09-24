@@ -12,6 +12,9 @@ set(CMAKE_C_FLAGS_DEBUG "-DDEBUG -g3 -ggdb")
 ####
 set(CROSS_PATH /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf)
 
+###print
+message(CROSS_PATH IS ${CROSS_PATH})
+
 #SET(CMAKE_FIND_ROOT_PATH "/home/release/arm11/library/gnuarm-4.4.2/")
 #SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 #SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
@@ -22,7 +25,7 @@ set(CROSS_PATH /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-li
 
 # Name of C compiler.
 #set(CMAKE_C_COMPILER "${CROSS_PATH}/bin/arm-linux-gnueabihf-gcc")
-#set(CMAKE_CXX_COMPILER "${CROSS_PATH}/bin/arm-linux-gnueabihf-g++")
+#set(CMAKE_CXX_COMPILER "${}CROSS_PATH}/bin/arm-linux-gnueabihf-g++")
 set(CMAKE_C_COMPILER "arm-linux-gnueabihf-gcc")
 set(CMAKE_CXX_COMPILER "arm-linux-gnueabihf-g++")
 

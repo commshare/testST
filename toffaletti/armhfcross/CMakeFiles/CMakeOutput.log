@@ -12,3 +12,31 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 The C compiler identification is GNU, found in "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/2.8.11/CompilerIdC/a.out"
 
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/2.8.11/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/CMakeTmp
+
+Run Build Command:/bin/gmake "cmTryCompileExec4139900634/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec4139900634.dir/build.make CMakeFiles/cmTryCompileExec4139900634.dir/build
+gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec4139900634.dir/testCCompiler.c.o
+/bin/cc    -o CMakeFiles/cmTryCompileExec4139900634.dir/testCCompiler.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec4139900634
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4139900634.dir/link.txt --verbose=1
+/bin/cc         CMakeFiles/cmTryCompileExec4139900634.dir/testCCompiler.c.o  -o cmTryCompileExec4139900634 -rdynamic 
+gmake[1]: 离开目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/CMakeTmp”
+
+
