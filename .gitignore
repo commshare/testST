@@ -1,4 +1,8 @@
 *.o
 *.o
 *.d
-
+*.tgz
+*.zip
+*.rar
+*.gz
+*.bz2
