@@ -210,7 +210,7 @@ static int query_domain(st_netfd_t nfd, const char *hostname, struct in_addr *ad
 
     if (parse_answer(&qbuf, len, addr) == 0)
     {	LOGD("after parse_answer");
-	//free(name);//add by me for malloc
+	free(name);//add by me for malloc
 		return 0;//×ßÕâÀï
     }
   }

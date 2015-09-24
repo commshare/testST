@@ -95,8 +95,8 @@ Backtrace stopped: previous frame inner to this frame (corrupt stack?)
   /* Use dns_getaddr() instead of gethostbyname(3) to get IP address */
   #if 1
     int ret=-99;
-     dns_getaddr(host, &addr, TIMEOUT);
-    LOGD("dns_getaddr RET");
+    ret= dns_getaddr(host, &addr, TIMEOUT);
+    LOGD("dns_getaddr RET [%d]",ret);
     if ( ret< 0) {
   #else
     if ( dns_getaddr(host, &addr, TIMEOUT)< 0) {
@@ -153,22 +153,28 @@ int main(int argc, char *argv[])
     exit(1);
   }
 
+#if 1
   if (st_init() < 0) {
     perror("st_init");
     exit(1);
   }
-
+#endif
+  #if 0
 	slogi("---before for--argc[%d]",argc);
   for (i = 1; i < argc; i++) {
   	slogi("====%d=[%s]=",i,argv[i]);
+    #if 0
     /* Create a separate thread for each host name */
     if (st_thread_create(do_resolve, argv[i], 0, 0) == NULL) {
       perror("st_thread_create");
       exit(1);
     }
+    #endif
+    //do_resolve();
   }
-
-  st_thread_exit(NULL); //ÔõÃ´Ö±½Óµ½ÁËÕâÀïÄØ
+  #endif
+   do_resolve("www.baidu.com");
+  //st_thread_exit(NULL); //ÔõÃ´Ö±½Óµ½ÁËÕâÀïÄØ
 
   /* NOTREACHED ÍøÂç²»¿É´ïå */
   return 1; //Ã²ËÆÕâÀïÊÇ³É¹¦?
