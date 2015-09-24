@@ -1,6 +1,4 @@
 /home/st/toffaletti/armhf/CMakeFiles/lookupdns.dir
 /home/st/toffaletti/armhf/CMakeFiles/server.dir
 /home/st/toffaletti/armhf/CMakeFiles/st.dir
-/home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir
-/home/st/toffaletti/armhf/extensions/CMakeFiles/test-cares-st.dir
 /home/st/toffaletti/armhf/CMakeFiles/threaded.dir

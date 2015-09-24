@@ -253,10 +253,13 @@ void st_thread_exit(void *retval)
 {
   _st_thread_t *thread = _ST_CURRENT_THREAD();
 
+   LOGD("======CCC=========");
   thread->retval = retval;
   _st_thread_cleanup(thread);
+     LOGD("======DDD=====thread->term[%d]====",thread->term);
+
   _st_active_count--;
-  if (thread->term) {
+  if (thread->term) {//不执行
     /* Put thread on the zombie queue */
     thread->state = _ST_ST_ZOMBIE;
     _ST_ADD_ZOMBIEQ(thread);
@@ -283,12 +286,16 @@ void st_thread_exit(void *retval)
 #endif
 
   if (!(thread->flags & _ST_FL_PRIMORDIAL)) {
+  	LOGD("#####_st_stack_free#####");
     _st_stack_free(thread->stack); //走这里
   }
 
+  	LOGD("#####Find another thread to run#####");
   /* Find another thread to run 发现另外一个线程也在运行*/
   _ST_SWITCH_CONTEXT(thread);
+   	LOGD("#####  free(thread);#####");
   free(thread);
+   	LOGD("##### (*_st_eventsys->free)()####");
   (*_st_eventsys->free)(); /*evnet.c 174*/
 }
 

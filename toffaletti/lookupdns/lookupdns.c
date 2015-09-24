@@ -150,7 +150,7 @@ int main(int argc, char *argv[])
 
   if (argc < 2) {
     fprintf(stderr, "Usage: %s <hostname1> [<hostname2>] ...\n", argv[0]);
-    exit(1);
+   // exit(1);
   }
 
 #if 1
@@ -159,13 +159,13 @@ int main(int argc, char *argv[])
     exit(1);
   }
 #endif
-  #if 0
+  #if 1
 	slogi("---before for--argc[%d]",argc);
-  for (i = 1; i < argc; i++) {
+  for (i = 1; i < 2; i++) {
   	slogi("====%d=[%s]=",i,argv[i]);
-    #if 0
+    #if 1
     /* Create a separate thread for each host name */
-    if (st_thread_create(do_resolve, argv[i], 0, 0) == NULL) {
+    if (st_thread_create(do_resolve, "www.baidu.com", 0, 0) == NULL) {
       perror("st_thread_create");
       exit(1);
     }
@@ -173,8 +173,11 @@ int main(int argc, char *argv[])
     //do_resolve();
   }
   #endif
-   do_resolve("www.baidu.com");
-  //st_thread_exit(NULL); //ÔõÃ´Ö±½Óµ½ÁËÕâÀïÄØ
+  // do_resolve("www.baidu.com");
+
+  st_thread_exit(NULL); //ÔõÃ´Ö±½Óµ½ÁËÕâÀïÄØ
+
+   sleep (60);
 
   /* NOTREACHED ÍøÂç²»¿É´ïå */
   return 1; //Ã²ËÆÕâÀïÊÇ³É¹¦?

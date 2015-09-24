@@ -6,12 +6,14 @@
 
 #IncludeRegexTransform: 
 
-/home/st/toffaletti/armhf/examples/res.c
+/home/st/toffaletti/armhf/examples/lookupdns.c
 stdio.h
 -
-string.h
+stdlib.h
 -
 unistd.h
+-
+sys/time.h
 -
 sys/types.h
 -
@@ -19,13 +21,9 @@ sys/socket.h
 -
 netinet/in.h
 -
-arpa/nameser.h
--
-resolv.h
+arpa/inet.h
 -
 netdb.h
--
-errno.h
 -
 st.h
 /home/st/toffaletti/armhf/examples/st.h

@@ -134,16 +134,16 @@ static int parse_answer(querybuf_t *ans, int len, struct in_addr *addr)
 }
 
 
-static int query_domain(st_netfd_t nfd, const char *hostname, struct in_addr *addr,
+static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
 			st_utime_t timeout)
 {
  //	name="www.baidu.com";
-
+#if 0
   char *name=malloc(128);
   memset(name,0,128);
   strcpy(name,hostname);
  LOGD("hostname [%s] name[%s]",hostname,name);
-
+#endif
   querybuf_t qbuf;
   u_char *buf = qbuf.buf;
   HEADER *hp = &qbuf.hdr;
@@ -166,6 +166,13 @@ static int query_domain(st_netfd_t nfd, const char *hostname, struct in_addr *ad
 	return -1;
       continue;
     }
+
+ len = st_recvfrom(nfd, buf, blen, NULL, NULL, timeout);
+ 	LOGD("  st_recvfrom len[%d]",len);
+return 0;
+
+
+
 
     /* Wait for reply */
     do {
@@ -210,11 +217,11 @@ static int query_domain(st_netfd_t nfd, const char *hostname, struct in_addr *ad
 
     if (parse_answer(&qbuf, len, addr) == 0)
     {	LOGD("after parse_answer");
-	free(name);//add by me for malloc
+	//free(name);//add by me for malloc
 		return 0;//◊ﬂ’‚¿Ô
     }
   }
- free(name);//add by me 20150923
+ ///free(name);//add by me 20150923
   return -1;
 }
 
