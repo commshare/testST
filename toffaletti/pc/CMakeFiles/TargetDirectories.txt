@@ -1,0 +1,6 @@
+/home/zhangbin/xlive/stateThreads/state-threads/CMakeFiles/lookupdns.dir
+/home/zhangbin/xlive/stateThreads/state-threads/CMakeFiles/server.dir
+/home/zhangbin/xlive/stateThreads/state-threads/CMakeFiles/st.dir
+/home/zhangbin/xlive/stateThreads/state-threads/extensions/CMakeFiles/st-ssl.dir
+/home/zhangbin/xlive/stateThreads/state-threads/extensions/CMakeFiles/test-cares-st.dir
+/home/zhangbin/xlive/stateThreads/state-threads/CMakeFiles/threaded.dir

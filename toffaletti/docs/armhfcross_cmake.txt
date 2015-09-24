@@ -1,0 +1,1 @@
+ cmake -DCMAKE_TOOLCHAIN_FILE=/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/toolschain.cmake /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
