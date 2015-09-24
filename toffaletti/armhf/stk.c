@@ -1,30 +1,30 @@
-/* 
+/*
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
+ *
  * Software distributed under the License is distributed on an "AS
  * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
- * 
+ *
  * The Original Code is the Netscape Portable Runtime library.
- * 
+ *
  * The Initial Developer of the Original Code is Netscape
- * Communications Corporation.  Portions created by Netscape are 
+ * Communications Corporation.  Portions created by Netscape are
  * Copyright (C) 1994-2000 Netscape Communications Corporation.  All
  * Rights Reserved.
- * 
+ *
  * Contributor(s):  Silicon Graphics, Inc.
- * 
+ *
  * Portions created by SGI are Copyright (C) 2000-2001 Silicon
  * Graphics, Inc.  All Rights Reserved.
- * 
+ *
  * Alternatively, the contents of this file may be used under the
  * terms of the GNU General Public License Version 2 or later (the
- * "GPL"), in which case the provisions of the GPL are applicable 
- * instead of those above.  If you wish to allow use of your 
+ * "GPL"), in which case the provisions of the GPL are applicable
+ * instead of those above.  If you wish to allow use of your
  * version of this file only under the terms of the GPL and not to
  * allow others to use your version of this file under the MPL,
  * indicate your decision by deleting the provisions above and
@@ -45,6 +45,7 @@
 #include <fcntl.h>
 #include <sys/mman.h>
 #include "common.h"
+#include"sc_log.h"
 
 
 /* How much space to leave between the stacks, at each end */
@@ -64,6 +65,7 @@ _st_stack_t *_st_stack_new(int stack_size)
 
   for (qp = _st_free_stacks.next; qp != &_st_free_stacks; qp = qp->next) {
     ts = _ST_THREAD_STACK_PTR(qp);
+	//下面这个不执行
     if (ts->stk_size >= stack_size) {
       /* Found a stack that is big enough */
       ST_REMOVE_LINK(&ts->links);
@@ -74,9 +76,13 @@ _st_stack_t *_st_stack_new(int stack_size)
     }
   }
 
-  /* Make a new thread stack object. */
+  /* Make a new thread stack object.创建一个新的线程stack对象 */
   if ((ts = (_st_stack_t *)calloc(1, sizeof(_st_stack_t))) == NULL)
-    return NULL;
+  {
+  	 //内存分配失败，会退出
+  	 LOGE("calloc error");
+  	return NULL;
+  }
   extra = _st_randomize_stacks ? _ST_PAGE_SIZE : 0;
   ts->vaddr_size = stack_size + 2*REDZONE + extra;
   ts->vaddr = _st_new_stk_segment(ts->vaddr_size);
@@ -112,7 +118,7 @@ void _st_stack_free(_st_stack_t *ts)
   if (!ts)
     return;
 
-  /* Put the stack on the free list */
+  /* Put the stack on the free list *///走这里
   ST_APPEND_LINK(&ts->links, _st_free_stacks.prev);
   _st_num_free_stacks++;
 }
@@ -130,8 +136,8 @@ static char *_st_new_stk_segment(int size)
 #if defined (MD_USE_SYSV_ANON_MMAP)
   if (zero_fd < 0) {
     if ((zero_fd = open("/dev/zero", O_RDWR, 0)) < 0)
-      return NULL;
-    fcntl(zero_fd, F_SETFD, FD_CLOEXEC);
+    {  LOGE("OPEN /dev/zero FAIL ");return NULL;}
+    fcntl(zero_fd, F_SETFD, FD_CLOEXEC); //这句话执行
   }
 #elif defined (MD_USE_BSD_ANON_MMAP)
   mmap_flags |= MAP_ANON;
@@ -141,7 +147,7 @@ static char *_st_new_stk_segment(int size)
 
   vaddr = mmap(NULL, size, PROT_READ | PROT_WRITE, mmap_flags, zero_fd, 0);
   if (vaddr == (void *)MAP_FAILED)
-    return NULL;
+  { LOGE("mmap fail"); return NULL;}
 
 #endif /* MALLOC_STACK */
 

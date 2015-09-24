@@ -120,7 +120,7 @@ void _st_vp_schedule(void)
 {
   _st_thread_t *thread;
 
-  if (_ST_RUNQ.next != &_ST_RUNQ) {
+  if (_ST_RUNQ.next != &_ST_RUNQ) { //×ßÕâÀï
     /* Pull thread off of the run queue */
     thread = _ST_THREAD_PTR(_ST_RUNQ.next);
     _ST_DEL_RUNQ(thread);
@@ -132,7 +132,7 @@ void _st_vp_schedule(void)
 
   /* Resume the thread */
   thread->state = _ST_ST_RUNNING;
-  _ST_RESTORE_CONTEXT(thread);
+  _ST_RESTORE_CONTEXT(thread); //Ö´ÐÐµ½ÕâÀï£¬¾ÍÌø×ªµ½ÁË617ÐÐÄÇÀï£¬ÎªÉ¶ÄØ?
 }
 
 static pthread_once_t io_once_control = PTHREAD_ONCE_INIT;
@@ -239,7 +239,7 @@ void *_st_idle_thread_start(void *arg)
     me->state = _ST_ST_RUNNABLE;
     _ST_SWITCH_CONTEXT(me);
   }
-
+   //»á´Ó243Ìø×ªµ½290
   _ST_RESTORE_CONTEXT(_st_this_vp.primorial_thread);
   /* No more threads */
   free(_st_this_vp.primorial_thread);
@@ -277,19 +277,19 @@ void st_thread_exit(void *retval)
 #endif
 
 #ifndef NVALGRIND
-  if (!(thread->flags & _ST_FL_PRIMORDIAL)) {
-    VALGRIND_STACK_DEREGISTER(thread->stack->valgrind_stack_id);
+  if (!(thread->flags & _ST_FL_PRIMORDIAL)) { LOGD("#####VALGRIND#####");
+    VALGRIND_STACK_DEREGISTER(thread->stack->valgrind_stack_id); //ÕâÀïÒª×ßå
   }
 #endif
 
   if (!(thread->flags & _ST_FL_PRIMORDIAL)) {
-    _st_stack_free(thread->stack);
+    _st_stack_free(thread->stack); //×ßÕâÀï
   }
 
-  /* Find another thread to run */
+  /* Find another thread to run ·¢ÏÖÁíÍâÒ»¸öÏß³ÌÒ²ÔÚÔËÐÐ*/
   _ST_SWITCH_CONTEXT(thread);
   free(thread);
-  (*_st_eventsys->free)();
+  (*_st_eventsys->free)(); /*evnet.c 174*/
 }
 
 
@@ -344,9 +344,10 @@ void _st_thread_main(void)
    */
   MD_CAP_STACK(&thread);
 
-  /* Run thread main */
+  /* Run thread main Ö´ÐÐÏß³ÌµÄº¯Êý£¬do_resolve¾ÍÊÇÒ»¸ö*/
   thread->retval = (*thread->start)(thread->arg);
 
+  //µ½ÁËÕâÀï£¬¾ÍËµÉÏÃæµÄÏß³Ìº¯ÊýÖ´ÐÐÍê±ÏÁË¡£
   /* All done, time to go away */
   st_thread_exit(thread->retval);
 }
@@ -551,14 +552,17 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
 
   /* Adjust stack size µ÷Õû¼Ä´æÆ÷Õ»´óÐ¡*/
   if (stk_size == 0)
-    stk_size = ST_DEFAULT_STACK_SIZE;
+  {
+  	//×î¿ªÊ¼È·ÊµÊÇ0
+  	 stk_size = ST_DEFAULT_STACK_SIZE;
+  }
   stk_size = ((stk_size + _ST_PAGE_SIZE - 1) / _ST_PAGE_SIZE) * _ST_PAGE_SIZE;
   stack = _st_stack_new(stk_size);
   if (!stack)
     return NULL;
 
   /* Allocate thread object and per-thread data off the stack */
-#if defined (MD_STACK_GROWS_DOWN)
+#if defined (MD_STACK_GROWS_DOWN) /*Õâ¸öÖ´ÐÐ*/
   sp = stack->stk_top;
 #ifdef __ia64__
   /*
@@ -574,7 +578,7 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   if ((unsigned long)bsp & 0x3f)
     bsp = bsp + (0x40 - ((unsigned long)bsp & 0x3f));
   stack->bsp = bsp + _ST_STACK_PAD_SIZE;
-#endif
+#endif //×ßÕâÀï
   sp = sp - (ST_KEYS_MAX * sizeof(void *));
   ptds = (void **) sp;
   sp = sp - sizeof(_st_thread_t);
@@ -584,7 +588,7 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   if ((unsigned long)sp & 0x3f)
     sp = sp - ((unsigned long)sp & 0x3f);
   stack->sp = sp - _ST_STACK_PAD_SIZE;
-#elif defined (MD_STACK_GROWS_UP)
+#elif defined (MD_STACK_GROWS_UP) //ÕâÀï²»×ß
   sp = stack->stk_bottom;
   thread = (_st_thread_t *) sp;
   sp = sp + sizeof(_st_thread_t);
@@ -595,11 +599,11 @@ _st_thread_t *st_thread_create(void *(*start)(void *arg), void *arg,
   if ((unsigned long)sp & 0x3f)
     sp = sp + (0x40 - ((unsigned long)sp & 0x3f));
   stack->sp = sp + _ST_STACK_PAD_SIZE;
-#else
+#else //²»×ß
 #error Unknown OS
 LOGE("error Unknown OS");
 #endif
-
+//×ßÕâÀï
   memset(thread, 0, sizeof(_st_thread_t));
   memset(ptds, 0, ST_KEYS_MAX * sizeof(void *));
 
@@ -610,14 +614,14 @@ LOGE("error Unknown OS");
   thread->arg = arg;
 
 #ifndef __ia64__
-   /*»á×ßÕâÀï*/
+   /*»á×ßÕâÀï*/ //Ã²ËÆÕâÀïÒ²²»×ß°¡ 20150922£¬ºóÀ´Ìø×ªµ½ÁËÕâÀï£¬Ö´ÐÐÕâ¸ömain
   _ST_INIT_CONTEXT(thread, stack->sp, _st_thread_main);
 #else /*Õâ¸öÊÇ__ia64__*/
   _ST_INIT_CONTEXT(thread, stack->sp, stack->bsp, _st_thread_main);
 #endif
 
   /* If thread is joinable, allocate a termination condition variable */
-  if (joinable) {
+  if (joinable) { //ÕâÀï²»×ß
     thread->term = st_cond_new();
     if (thread->term == NULL) {
       _st_stack_free(thread->stack);
@@ -633,7 +637,7 @@ LOGE("error Unknown OS");
   _ST_ADD_THREADQ(thread);
 #endif
 
-#ifndef NVALGRIND
+#ifndef NVALGRIND  //Ã²ËÆÕâÀï×ß°¡
   thread->stack->valgrind_stack_id =
     VALGRIND_STACK_REGISTER(thread->stack->stk_top, thread->stack->stk_bottom);
 #endif
@@ -656,7 +660,7 @@ void _st_show_thread_stack(_st_thread_t *thread, const char *messg)
 
 }
 
-void _st_iterate_threads(void)
+void _st_iterate_threads(void) /*´Ó290Ìø×ªµ½663*/
 {
   static _st_thread_t *thread = NULL;
   static jmp_buf orig_jb, save_jb;
@@ -689,7 +693,7 @@ void _st_iterate_threads(void)
     q = q->next;
   ST_ASSERT(q != &_ST_THREADQ);
   thread = _ST_THREAD_THREADQ_PTR(q);
-  if (thread == _ST_CURRENT_THREAD())
+  if (thread == _ST_CURRENT_THREAD()) //×ßÕâÀï
     MD_LONGJMP(orig_jb, 1);
   memcpy(save_jb, thread->context, sizeof(jmp_buf));
   MD_LONGJMP(thread->context, 1);

@@ -5,6 +5,7 @@ CMakeFiles/st.dir/event.c.o: common.h
 CMakeFiles/st.dir/event.c.o: event.c
 CMakeFiles/st.dir/event.c.o: md.h
 CMakeFiles/st.dir/event.c.o: public.h
+CMakeFiles/st.dir/event.c.o: sc_log.h
 
 CMakeFiles/st.dir/io.c.o: common.h
 CMakeFiles/st.dir/io.c.o: io.c
@@ -16,6 +17,7 @@ CMakeFiles/st.dir/key.c.o: common.h
 CMakeFiles/st.dir/key.c.o: key.c
 CMakeFiles/st.dir/key.c.o: md.h
 CMakeFiles/st.dir/key.c.o: public.h
+CMakeFiles/st.dir/key.c.o: sc_log.h
 
 CMakeFiles/st.dir/md.S.o: md.S
 
@@ -28,6 +30,7 @@ CMakeFiles/st.dir/sched.c.o: sched.c
 CMakeFiles/st.dir/stk.c.o: common.h
 CMakeFiles/st.dir/stk.c.o: md.h
 CMakeFiles/st.dir/stk.c.o: public.h
+CMakeFiles/st.dir/stk.c.o: sc_log.h
 CMakeFiles/st.dir/stk.c.o: stk.c
 
 CMakeFiles/st.dir/sync.c.o: common.h

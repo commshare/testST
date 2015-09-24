@@ -6,6 +6,7 @@ CMakeFiles/st.dir/event.c.o
  /home/st/toffaletti/armhf/event.c
  /home/st/toffaletti/armhf/md.h
  /home/st/toffaletti/armhf/public.h
+ /home/st/toffaletti/armhf/sc_log.h
 CMakeFiles/st.dir/io.c.o
  /home/st/toffaletti/armhf/common.h
  /home/st/toffaletti/armhf/io.c
@@ -17,6 +18,7 @@ CMakeFiles/st.dir/key.c.o
  /home/st/toffaletti/armhf/key.c
  /home/st/toffaletti/armhf/md.h
  /home/st/toffaletti/armhf/public.h
+ /home/st/toffaletti/armhf/sc_log.h
 CMakeFiles/st.dir/md.S.o
  /home/st/toffaletti/armhf/md.S
 CMakeFiles/st.dir/sched.c.o
@@ -29,6 +31,7 @@ CMakeFiles/st.dir/stk.c.o
  /home/st/toffaletti/armhf/common.h
  /home/st/toffaletti/armhf/md.h
  /home/st/toffaletti/armhf/public.h
+ /home/st/toffaletti/armhf/sc_log.h
  /home/st/toffaletti/armhf/stk.c
 CMakeFiles/st.dir/sync.c.o
  /home/st/toffaletti/armhf/common.h

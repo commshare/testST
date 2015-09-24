@@ -1,28 +1,28 @@
-/* 
+/*
  * The contents of this file are subject to the Mozilla Public
  * License Version 1.1 (the "License"); you may not use this file
  * except in compliance with the License. You may obtain a copy of
  * the License at http://www.mozilla.org/MPL/
- * 
+ *
  * Software distributed under the License is distributed on an "AS
  * IS" basis, WITHOUT WARRANTY OF ANY KIND, either express or
  * implied. See the License for the specific language governing
  * rights and limitations under the License.
- * 
+ *
  * The Original Code is the Netscape Portable Runtime library.
- * 
+ *
  * The Initial Developer of the Original Code is Netscape
- * Communications Corporation.  Portions created by Netscape are 
+ * Communications Corporation.  Portions created by Netscape are
  * Copyright (C) 1994-2000 Netscape Communications Corporation.  All
  * Rights Reserved.
- * 
+ *
  * Contributor(s):  Silicon Graphics, Inc.
  *                  Yahoo! Inc.
  *
  * Alternatively, the contents of this file may be used under the
  * terms of the GNU General Public License Version 2 or later (the
- * "GPL"), in which case the provisions of the GPL are applicable 
- * instead of those above.  If you wish to allow use of your 
+ * "GPL"), in which case the provisions of the GPL are applicable
+ * instead of those above.  If you wish to allow use of your
  * version of this file only under the terms of the GPL and not to
  * allow others to use your version of this file under the MPL,
  * indicate your decision by deleting the provisions above and
@@ -39,6 +39,7 @@
 #include <time.h>
 #include <errno.h>
 #include "common.h"
+#include"sc_log.h"
 
 #ifdef MD_HAVE_KQUEUE
 #include <sys/event.h>
@@ -75,8 +76,8 @@ static __thread struct _st_polldata {
     int fdcnt;
 } *_st_poll_data;
 
-#define _ST_POLL_OSFD_CNT        (_st_poll_data->fdcnt) 
-#define _ST_POLLFDS              (_st_poll_data->pollfds) 
+#define _ST_POLL_OSFD_CNT        (_st_poll_data->fdcnt)
+#define _ST_POLLFDS              (_st_poll_data->pollfds)
 #define _ST_POLLFDS_SIZE         (_st_poll_data->pollfds_size)
 #endif  /* MD_HAVE_POLL */
 
@@ -245,7 +246,7 @@ ST_HIDDEN void _st_select_find_bad_fd(void)
         notify = 0;
         epds = pq->pds + pq->npds;
         pq_max_osfd = -1;
-      
+
         for (pds = pq->pds; pds < epds; pds++) {
             osfd = pds->fd;
             pds->revents = 0;
@@ -343,7 +344,7 @@ ST_HIDDEN void _st_select_dispatch(void)
             notify = 0;
             epds = pq->pds + pq->npds;
             pq_max_osfd = -1;
-      
+
             for (pds = pq->pds; pds < epds; pds++) {
                 osfd = pds->fd;
                 events = pds->events;
@@ -417,7 +418,7 @@ ST_HIDDEN int _st_select_fd_new(int osfd)
         errno = EMFILE;
         return -1;
     }
-
+   LOGD("_st_select_fd_new osfd[%d] ok",osfd);
     return 0;
 }
 
@@ -918,7 +919,7 @@ ST_HIDDEN void _st_kq_dispatch(void)
             pq = _ST_POLLQUEUE_PTR(q);
             notify = 0;
             epds = pq->pds + pq->npds;
-                     
+
             for (pds = pq->pds; pds < epds; pds++) {
                 osfd = pds->fd;
                 events = pds->events;
@@ -1037,7 +1038,7 @@ static _st_eventsys_t _st_kq_eventsys = {
     _st_kq_pollset_add,
     _st_kq_pollset_del,
     _st_kq_fd_new,
-    _st_kq_fd_close,  
+    _st_kq_fd_close,
     _st_kq_fd_getlimit
 };
 #endif  /* MD_HAVE_KQUEUE */
@@ -1367,7 +1368,7 @@ ST_HIDDEN int _st_epoll_fd_new(int osfd)
         _st_epoll_fd_data_expand(osfd) < 0)
         return -1;
 
-    return 0;   
+    return 0;
 }
 
 ST_HIDDEN int _st_epoll_fd_close(int osfd)

@@ -130,15 +130,15 @@ static _st_netfd_t *_st_netfd_new(int osfd, int nonblock, int is_socket)
   _st_netfd_t *fd;
   int flags = 1;
 
-  if ((*_st_eventsys->fd_new)(osfd) < 0)
+  if ((*_st_eventsys->fd_new)(osfd) < 0) //跳转到了event.c的416行
     return NULL;
 
-  pthread_mutex_lock(&_st_netfd_freelist_mutex);
+  pthread_mutex_lock(&_st_netfd_freelist_mutex); //加锁
   if (_st_netfd_freelist) {
     fd = _st_netfd_freelist;
     _st_netfd_freelist = _st_netfd_freelist->next;
     pthread_mutex_unlock(&_st_netfd_freelist_mutex);
-  } else {
+  } else { //居然走这里?
     pthread_mutex_unlock(&_st_netfd_freelist_mutex);
     fd = calloc(1, sizeof(_st_netfd_t));
     if (!fd)
@@ -149,14 +149,14 @@ static _st_netfd_t *_st_netfd_new(int osfd, int nonblock, int is_socket)
   fd->inuse = 1;
   fd->next = NULL;
 
-  if (nonblock) {
+  if (nonblock) { //走这里
     /* Use just one system call */
     if (is_socket && ioctl(osfd, FIONBIO, &flags) != -1)
       return fd;
-    /* Do it the Posix way */
+    /* Do it the Posix way *///走这里?
     if ((flags = fcntl(osfd, F_GETFL, 0)) < 0 ||
 	fcntl(osfd, F_SETFL, flags | O_NONBLOCK) < 0) {
-      st_netfd_free(fd);
+      st_netfd_free(fd); //走这里?
       return NULL;
     }
   }
@@ -179,6 +179,7 @@ _st_netfd_t *st_netfd_open_socket(int osfd)
 
 int st_netfd_close(_st_netfd_t *fd)
 {
+#if 0
 	//确认了，fd是非空的
 //	if(fd==NULL)
 //		LOGE("st_netfd_close fd is NULL ");
@@ -193,16 +194,26 @@ int st_netfd_close(_st_netfd_t *fd)
 #endif
   	LOGD("st_netfd_close before fd_close 2");
 
+#if 1
    //执行下面的这句话就挂了
   if ((*_st_eventsys->fd_close)(fd->osfd) < 0)
   {
   	LOGD("(*_st_eventsys->fd_close)(fd->osfd) < 0 ");
      return -1;
   }
+
 	LOGD("st_netfd_close 222 ");
 
   st_netfd_free(fd);
   return close(fd->osfd);
+    #endif
+
+#else
+   LOGD("JUST TEST st_netfd_close");
+#endif
+
+	return 0;
+
 }
 
 
@@ -705,7 +716,7 @@ int st_recvfrom(_st_netfd_t *fd, void *buf, int len, struct sockaddr *from,
 		int *fromlen, st_utime_t timeout)
 {
   int n;
-
+  //下面这个也不进入执行
   while ((n = recvfrom(fd->osfd, buf, len, 0, from, (socklen_t *)fromlen))
 	 < 0) {
     if (errno == EINTR)
@@ -714,9 +725,12 @@ int st_recvfrom(_st_netfd_t *fd, void *buf, int len, struct sockaddr *from,
       return -1;
     /* Wait until the socket becomes readable */
     if (st_netfd_poll(fd, POLLIN, timeout) < 0)
+    {
+		  LOGD("test-----retutn");
       return -1;
+    }
   }
-
+  LOGD("recvfrom get n [%d]",n);
   return n;
 }
 
@@ -725,7 +739,7 @@ int st_sendto(_st_netfd_t *fd, const void *msg, int len,
 	      const struct sockaddr *to, int tolen, st_utime_t timeout)
 {
   int n;
-
+  //下面这个while不进入执行
   while ((n = sendto(fd->osfd, msg, len, 0, to, tolen)) < 0) {
     if (errno == EINTR)
       continue;
@@ -735,7 +749,7 @@ int st_sendto(_st_netfd_t *fd, const void *msg, int len,
     if (st_netfd_poll(fd, POLLOUT, timeout) < 0)
       return -1;
   }
-
+  LOGD("sendto get n [%d]",n);
   return n;
 }
 

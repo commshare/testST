@@ -1,7 +1,7 @@
 /*
  * Copyright (c) 1985, 1988, 1993
  *    The Regents of the University of California.  All rights reserved.
- * 
+ *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
  * are met:
@@ -17,7 +17,7 @@
  * 4. Neither the name of the University nor the names of its contributors
  *    may be used to endorse or promote products derived from this software
  *    without specific prior written permission.
- * 
+ *
  * THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
  * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
  * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
@@ -35,16 +35,16 @@
  *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions
- * are met: 
+ * are met:
  *
  * 1. Redistributions of source code must retain the above copyright
- *    notice, this list of conditions and the following disclaimer. 
+ *    notice, this list of conditions and the following disclaimer.
  * 2. Redistributions in binary form must reproduce the above copyright
  *    notice, this list of conditions and the following disclaimer in the
  *    documentation and/or other materials provided with the distribution.
  * 3. Neither the name of Silicon Graphics, Inc. nor the names of its
  *    contributors may be used to endorse or promote products derived from
- *    this software without specific prior written permission. 
+ *    this software without specific prior written permission.
  *
  * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
  * ``AS IS'' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
@@ -199,7 +199,7 @@ static int query_domain(st_netfd_t nfd, const char *name,
     return -1;
 }
 
-
+#if 0
 #define CLOSE_AND_RETURN(ret) \
   {                           \
     n = errno;                \
@@ -208,6 +208,14 @@ static int query_domain(st_netfd_t nfd, const char *name,
     return (ret);             \
   }
 
+#else
+//LOGD("JUST TEST CLOSE_RETURN ret[%d]",ret);\
+	//return (ret);\
+#define CLOSE_AND_RETURN(ret) \
+{	\
+	LOGD("JUST TEST CLOSE_RETURN ret[%d]",ret);\
+}
+#endif
 
 int _stx_dns_getaddrlist(const char *host, struct in_addr *addrs,
                          int *num_addrs, st_utime_t timeout)

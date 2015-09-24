@@ -108,11 +108,11 @@ static int parse_answer(querybuf_t *ans, int len, struct in_addr *addr)
   eoa = ans->buf + len;
   cp = ans->buf + sizeof(HEADER);
 
-  while (ahp->qdcount > 0) {
+  while (ahp->qdcount > 0) { //要执行
     ahp->qdcount--;
     cp += dn_skipname(cp, eoa) + QFIXEDSZ;
   }
-  while (ahp->ancount > 0 && cp < eoa) {
+  while (ahp->ancount > 0 && cp < eoa) {//要执行
     ahp->ancount--;
     if ((n = dn_expand(ans->buf, eoa, cp, buf, sizeof(buf))) < 0)
       break;
@@ -126,7 +126,7 @@ static int parse_answer(querybuf_t *ans, int len, struct in_addr *addr)
       continue;
     }
     memcpy(addr, cp, n);
-    return 0;
+    return 0; //走这里
   }
 
   h_errno = TRY_AGAIN;
@@ -134,9 +134,16 @@ static int parse_answer(querybuf_t *ans, int len, struct in_addr *addr)
 }
 
 
-static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
+static int query_domain(st_netfd_t nfd, const char *hostname, struct in_addr *addr,
 			st_utime_t timeout)
 {
+ //	name="www.baidu.com";
+
+  char *name=malloc(128);
+  memset(name,0,128);
+  strcpy(name,hostname);
+ LOGD("hostname [%s] name[%s]",hostname,name);
+
   querybuf_t qbuf;
   u_char *buf = qbuf.buf;
   HEADER *hp = &qbuf.hdr;
@@ -164,7 +171,10 @@ static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
     do {
       len = st_recvfrom(nfd, buf, blen, NULL, NULL, timeout);
       if (len <= 0) /*一直接收不到应答消息啊*/
-		break;
+	  {
+	  	LOGD("  st_recvfrom len[%d]",len);
+	  	break;
+	  }
     } while (id != hp->id);
 
     if (len < HFIXEDSZ) {
@@ -199,15 +209,19 @@ static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
     }
 
     if (parse_answer(&qbuf, len, addr) == 0)
-      return 0;
+    {	LOGD("after parse_answer");
+	//free(name);//add by me for malloc
+		return 0;//走这里
+    }
   }
-
+ free(name);//add by me 20150923
   return -1;
 }
 
 
 #define CLOSE_AND_RETURN(ret) \
-  {                           \
+  { \
+  	printf("ret[%d] errno[%d]",ret,errno);\
     n = errno;                \
     st_netfd_close(nfd);      \
     errno = n;                \
@@ -215,8 +229,20 @@ static int query_domain(st_netfd_t nfd, const char *name, struct in_addr *addr,
   }
 
 
-int dns_getaddr(const char *host, struct in_addr *addr, st_utime_t timeout)
+int dns_getaddr(const char *hosttest, struct in_addr *addr, st_utime_t timeout)
 {
+	//return 0;
+//	host="www.baidu.com";
+#if 0
+char *host=malloc(128);
+memset(host,0,128);
+strcpy(host,hosttest);
+#endif
+char host[128];
+memset(host,0,128);
+strcpy(host,hosttest);
+LOGD("hosttest [%s] host[%s]",hosttest,host);
+
   char name[MAXDNAME], **domain;
   const char *cp;
   int s, n, maxlen, dots;
@@ -244,39 +270,60 @@ int dns_getaddr(const char *host, struct in_addr *addr, st_utime_t timeout)
   }
   if ((nfd = st_netfd_open_socket(s)) == NULL) {
     h_errno = NETDB_INTERNAL;
-    n = errno;
+    n = errno; //n用来记录错误号
     close(s);
     errno = n;
     return -1;
   }
-
+  //可以走到这里
   maxlen = sizeof(name) - 1;
-  n = 0;
+  LOGD("maxlen[%d]",maxlen);
+  n = 0; //此时n是计数器
   dots = 0;
   trailing_dot = 0;
   tried_as_is = 0;
 
   for (cp = host; *cp && n < maxlen; cp++) {
-    dots += (*cp == '.');
-    name[n++] = *cp;
+  	//dots记录host中有几个.
+    dots += (*cp == '.'); //走这里
+    name[n++] = *cp; //看起来好像是复制host到name中
   }
+  //n是后加，所以n-1，此时n-1对应的是最后一个字符
   if (name[n - 1] == '.')
     trailing_dot = 1;
-
+  LOGD("========AAA===name[%s]=========",name);
   /*
    * If there are dots in the name already, let's just give it a try
    * 'as is'.  The threshold can be set with the "ndots" option.
    */
+
+
+
   if (dots >= _res.ndots) {
     if (query_domain(nfd, host, addr, timeout) == 0)
     {
 		/*貌似我的query域名就是返回0，只好关闭并且退出了*/
-		LOGD("query_domain return 0");
-		LOGD("query_domain return 0");
+	//	LOGD("query_domain return 0");
+     /*不管我是否注释掉这句话都有段错误*/
+
+		return 0;
+#if 0
 		CLOSE_AND_RETURN(0);
+#else
+     int ret=0;
+     LOGD("===BB==========");
+    // LOGD("%-40s %s", (char *)host, inet_ntoa(addr));
+    // LOGD("DO RETURN ret[%d]",ret);
+
+  	//LOGD(" errno[%d]",errno);
+   // n = errno;
+   // st_netfd_close(nfd);
+  //  errno = n;
+    return -1;
+//  goto ZBTEST;
+#endif
 		//下面这句话不被执行，上面的return直接退出了这个函数
 		slogi("query_domain WILL NOT HERE");
-
     }
     if (h_errno == NETDB_INTERNAL && errno == EINTR)
       CLOSE_AND_RETURN(-1);
@@ -310,9 +357,15 @@ int dns_getaddr(const char *host, struct in_addr *addr, st_utime_t timeout)
    */
   if (!tried_as_is) {
     if (query_domain(nfd, host, addr, timeout) == 0)
-      CLOSE_AND_RETURN(0);
+    {
+		//LOGD("===HERE=query_domain");
+		LOGD("----1----query_domain------");
+     	CLOSE_AND_RETURN(0);
+    }
   }
-
   CLOSE_AND_RETURN(-1);
+//  ZBTEST:
+	//  	LOGD("ZBTEST");
+  //	return 0;
 }
 
