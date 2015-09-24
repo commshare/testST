@@ -1,0 +1,31 @@
+---- st_netfd_close Matches (30 in 11 files) ----
+Bio_netfd.c (armhf\extensions):            st_netfd_close(s->nfd);
+Dnsres.c (armhf\extensions):    st_netfd_close(nfd);      \
+Io.c (armhf):int st_netfd_close(_st_netfd_t *fd)
+Io.c (armhf)://		LOGE("st_netfd_close fd is NULL ");
+Io.c (armhf)://		LOGD("st_netfd_close fd not  NULL ");
+Io.c (armhf):  	LOGD("st_netfd_close before fd_close, fd->osfd[%d]",fd->osfd);
+Io.c (armhf):  	LOGD("st_netfd_close before fd_close 1");
+Io.c (armhf):  	LOGD("st_netfd_close before fd_close 2");
+Io.c (armhf):	LOGD("st_netfd_close 222 ");
+Io.c (armhf):  st_netfd_close(p[0]);
+Io.c (armhf):  st_netfd_close(p[1]);
+Libst.def (armhf):    st_netfd_close @79
+Proxy.c (armhf\examples):    st_netfd_close(rmt_nfd);
+Proxy.c (armhf\examples):  st_netfd_close(rmt_nfd);
+Proxy.c (armhf\examples):  st_netfd_close(cli_nfd);
+Public.h (armhf):extern int st_netfd_close(st_netfd_t fd);
+Reference.html (armhf\docs):<DL><DD><A HREF=#netfd_close>st_netfd_close()</A></DD></DL>
+Reference.html (armhf\docs):<DD><A HREF=#netfd_close>st_netfd_close()</A></DD>
+Reference.html (armhf\docs):<H4>st_netfd_close()</H4>
+Reference.html (armhf\docs):int st_netfd_close(st_netfd_t fd);
+Reference.html (armhf\docs):<TT>st_netfd_close()</TT> has the following parameters:<P>
+Reference.html (armhf\docs):<A HREF=#netfd_close>st_netfd_close()</A>).
+Reference.html (armhf\docs):<A HREF=#netfd_close>st_netfd_close()</A>)
+Reference.html (armhf\docs):<A HREF=#netfd_close>st_netfd_close()</A>).
+Reference.html (armhf\docs):<A HREF=#netfd_close>st_netfd_close()</A>.<P>
+Res.c (armhf\examples):    st_netfd_close(nfd);      \
+Server.c (armhf\examples):    st_netfd_close(cli_nfd);
+St.h (armhf):extern int st_netfd_close(st_netfd_t fd);
+Stx_fileio.c (armhf\extensions):        st_netfd_close(dat->control_fd);
+Stx_fileio.c (armhf\extensions):        st_netfd_close(dat->data_fd);

@@ -1,0 +1,9 @@
+This is my fork of the state-threads library from http://state-threads.sourceforge.net/
+
+Changes include:
+- CMake build system
+- Valgrind support for stack swaps
+- Minor updates for modern C compilers (gcc/clang)
+- pthread support (using __thread gcc extension)
+
+See README.orig for more information.
