@@ -1,0 +1,242 @@
+The target system is: Linux -  - 
+The host system is: Linux - 3.10.0-229.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/2.8.11/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/2.8.11/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1992634129/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1992634129.dir/build.make CMakeFiles/cmTryCompileExec1992634129.dir/build
+gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1992634129.dir/testCCompiler.c.o
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec1992634129.dir/testCCompiler.c.o   -c /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1992634129
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1992634129.dir/link.txt --verbose=1
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc         CMakeFiles/cmTryCompileExec1992634129.dir/testCCompiler.c.o  -o cmTryCompileExec1992634129 -rdynamic 
+gmake[1]: Leaving directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2421205511/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2421205511.dir/build.make CMakeFiles/cmTryCompileExec2421205511.dir/build
+gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec2421205511
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2421205511.dir/link.txt --verbose=1
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc       -v CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2421205511 -rdynamic  
+Using built-in specs.
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin
+Thread model: posix
+gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) 
+COMPILER_PATH=/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../libexec/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2421205511' '-rdynamic' '-march=armv5te' '-funwind-tables'
+ /opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2421205511 /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/opt/toolchain/arm-2009q3/bin/../lib/gcc -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+gmake[1]: Leaving directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-linux-gnueabi-ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec2421205511/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2421205511.dir/build.make CMakeFiles/cmTryCompileExec2421205511.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc    -o CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec2421205511]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2421205511.dir/link.txt --verbose=1]
+  ignore line: [/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-gcc       -v CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec2421205511 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) ]
+  ignore line: [COMPILER_PATH=/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../libexec/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2421205511' '-rdynamic' '-march=armv5te' '-funwind-tables']
+  link line: [ /opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2421205511 /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/opt/toolchain/arm-2009q3/bin/../lib/gcc -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2] ==> ignore
+    arg [--sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2421205511] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o] ==> ignore
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec2421205511.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> [/opt/toolchain/arm-2009q3/lib/gcc/arm-none-linux-gnueabi/4.4.1]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc] ==> [/opt/toolchain/arm-2009q3/lib/gcc]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/lib]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/lib]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/opt/toolchain/arm-2009q3/lib/gcc/arm-none-linux-gnueabi/4.4.1;/opt/toolchain/arm-2009q3/lib/gcc;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/lib;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/lib;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec1397111232/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec1397111232.dir/build.make CMakeFiles/cmTryCompileExec1397111232.dir/build
+gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec1397111232.dir/testCXXCompiler.cxx.o
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++     -o CMakeFiles/cmTryCompileExec1397111232.dir/testCXXCompiler.cxx.o -c /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec1397111232
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1397111232.dir/link.txt --verbose=1
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++          CMakeFiles/cmTryCompileExec1397111232.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec1397111232 -rdynamic 
+gmake[1]: Leaving directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/gmake "cmTryCompileExec2761509212/fast"
+/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2761509212.dir/build.make CMakeFiles/cmTryCompileExec2761509212.dir/build
+gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++     -o CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec2761509212
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2761509212.dir/link.txt --verbose=1
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++        -v CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2761509212 -rdynamic  
+Using built-in specs.
+Target: arm-none-linux-gnueabi
+Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:;:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:;:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin
+Thread model: posix
+gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) 
+COMPILER_PATH=/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../libexec/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/
+LIBRARY_PATH=/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2761509212' '-rdynamic' '-shared-libgcc' '-march=armv5te' '-funwind-tables'
+ /opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2761509212 /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/opt/toolchain/arm-2009q3/bin/../lib/gcc -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o
+gmake[1]: Leaving directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp'
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(arm-none-linux-gnueabi-ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/gmake "cmTryCompileExec2761509212/fast"]
+  ignore line: [/usr/bin/gmake -f CMakeFiles/cmTryCompileExec2761509212.dir/build.make CMakeFiles/cmTryCompileExec2761509212.dir/build]
+  ignore line: [gmake[1]: Entering directory `/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++     -o CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec2761509212]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2761509212.dir/link.txt --verbose=1]
+  ignore line: [/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-g++        -v CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec2761509212 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [Target: arm-none-linux-gnueabi]
+  ignore line: [Configured with: /scratch/julian/2009q3-respin-linux-lite/src/gcc-4.4/configure --build=i686-pc-linux-gnu --host=i686-pc-linux-gnu --target=arm-none-linux-gnueabi --enable-threads --disable-libmudflap --disable-libssp --disable-libstdcxx-pch --enable-extra-sgxxlite-multilibs --with-arch=armv5te --with-gnu-as --with-gnu-ld --with-specs='%{funwind-tables|fno-unwind-tables|mabi=*|ffreestanding|nostdlib:]
+  ignore line: [:-funwind-tables} %{O2:%{!fno-remove-local-statics: -fremove-local-statics}} %{O*:%{O|O0|O1|O2|Os:]
+  ignore line: [:%{!fno-remove-local-statics: -fremove-local-statics}}}' --enable-languages=c,c++ --enable-shared --disable-lto --enable-symvers=gnu --enable-__cxa_atexit --with-pkgversion='Sourcery G++ Lite 2009q3-67' --with-bugurl=https://support.codesourcery.com/GNUToolchain/ --disable-nls --prefix=/opt/codesourcery --with-sysroot=/opt/codesourcery/arm-none-linux-gnueabi/libc --with-build-sysroot=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/libc --with-gmp=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-mpfr=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-ppl=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --with-host-libstdcxx='-static-libgcc -Wl,-Bstatic,-lstdc++,-Bdynamic -lm' --with-cloog=/scratch/julian/2009q3-respin-linux-lite/obj/host-libs-2009q3-67-arm-none-linux-gnueabi-i686-pc-linux-gnu/usr --disable-libgomp --enable-poison-system-directories --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin --with-build-time-tools=/scratch/julian/2009q3-respin-linux-lite/install/arm-none-linux-gnueabi/bin]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.4.1 (Sourcery G++ Lite 2009q3-67) ]
+  ignore line: [COMPILER_PATH=/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../libexec/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/bin/]
+  ignore line: [LIBRARY_PATH=/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/:/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib/:/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec2761509212' '-rdynamic' '-shared-libgcc' '-march=armv5te' '-funwind-tables']
+  link line: [ /opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2 --sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux.so.3 -X -m armelf_linux_eabi -o cmTryCompileExec2761509212 /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1 -L/opt/toolchain/arm-2009q3/bin/../lib/gcc -L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib -L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o /opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o]
+    arg [/opt/toolchain/arm-2009q3/bin/../libexec/gcc/arm-none-linux-gnueabi/4.4.1/collect2] ==> ignore
+    arg [--sysroot=/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec2761509212] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crt1.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crti.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtbegin.o] ==> ignore
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib]
+    arg [-L/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib]
+    arg [CMakeFiles/cmTryCompileExec2761509212.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/crtend.o] ==> ignore
+    arg [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1] ==> [/opt/toolchain/arm-2009q3/lib/gcc/arm-none-linux-gnueabi/4.4.1]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc] ==> [/opt/toolchain/arm-2009q3/lib/gcc]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../lib/gcc/arm-none-linux-gnueabi/4.4.1/../../../../arm-none-linux-gnueabi/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/lib]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/lib]
+  collapse library dir [/opt/toolchain/arm-2009q3/bin/../arm-none-linux-gnueabi/libc/usr/lib] ==> [/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/opt/toolchain/arm-2009q3/lib/gcc/arm-none-linux-gnueabi/4.4.1;/opt/toolchain/arm-2009q3/lib/gcc;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/lib;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/lib;/opt/toolchain/arm-2009q3/arm-none-linux-gnueabi/libc/usr/lib]
+  implicit fwks: []
+
+

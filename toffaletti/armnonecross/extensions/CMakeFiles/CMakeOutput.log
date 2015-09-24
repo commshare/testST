@@ -1,0 +1,516 @@
+The system is: Linux - 3.10.0-229.11.1.el7.x86_64 - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /bin/cc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/2.8.11/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/2.8.11/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/bin/gmake "cmTryCompileExec2899468318/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec2899468318.dir/build.make CMakeFiles/cmTryCompileExec2899468318.dir/build
+gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec2899468318.dir/testCCompiler.c.o
+/bin/cc    -o CMakeFiles/cmTryCompileExec2899468318.dir/testCCompiler.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec2899468318
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2899468318.dir/link.txt --verbose=1
+/bin/cc         CMakeFiles/cmTryCompileExec2899468318.dir/testCCompiler.c.o  -o cmTryCompileExec2899468318 -rdynamic 
+gmake[1]: 离开目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/bin/gmake "cmTryCompileExec687232330/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec687232330.dir/build.make CMakeFiles/cmTryCompileExec687232330.dir/build
+gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o
+/bin/cc    -o CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec687232330
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec687232330.dir/link.txt --verbose=1
+/bin/cc       -v CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec687232330 -rdynamic  
+使用内建 specs。
+COLLECT_GCC=/bin/cc
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper
+目标：x86_64-redhat-linux
+配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+线程模型：posix
+gcc 版本 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec687232330' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec687232330 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o
+gmake[1]: 离开目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec687232330/fast"]
+  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec687232330.dir/build.make CMakeFiles/cmTryCompileExec687232330.dir/build]
+  ignore line: [gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/bin/cc    -o CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec687232330]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec687232330.dir/link.txt --verbose=1]
+  ignore line: [/bin/cc       -v CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec687232330 -rdynamic  ]
+  ignore line: [使用内建 specs。]
+  ignore line: [COLLECT_GCC=/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper]
+  ignore line: [目标：x86_64-redhat-linux]
+  ignore line: [配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [线程模型：posix]
+  ignore line: [gcc 版本 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec687232330' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec687232330 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec687232330] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..]
+    arg [CMakeFiles/cmTryCompileExec687232330.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> [/usr/lib]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.3;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/bin/gmake "cmTryCompileExec554815895/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec554815895.dir/build.make CMakeFiles/cmTryCompileExec554815895.dir/build
+gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec554815895.dir/testCXXCompiler.cxx.o
+/bin/c++     -o CMakeFiles/cmTryCompileExec554815895.dir/testCXXCompiler.cxx.o -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec554815895
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec554815895.dir/link.txt --verbose=1
+/bin/c++          CMakeFiles/cmTryCompileExec554815895.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec554815895 -rdynamic 
+gmake[1]: 离开目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/bin/gmake "cmTryCompileExec4284764510/fast"
+/bin/gmake -f CMakeFiles/cmTryCompileExec4284764510.dir/build.make CMakeFiles/cmTryCompileExec4284764510.dir/build
+gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o
+/bin/c++     -o CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec4284764510
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4284764510.dir/link.txt --verbose=1
+/bin/c++        -v CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec4284764510 -rdynamic  
+使用内建 specs。
+COLLECT_GCC=/bin/c++
+COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper
+目标：x86_64-redhat-linux
+配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux
+线程模型：posix
+gcc 版本 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) 
+COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4284764510' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec4284764510 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o
+gmake[1]: 离开目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/bin/gmake "cmTryCompileExec4284764510/fast"]
+  ignore line: [/bin/gmake -f CMakeFiles/cmTryCompileExec4284764510.dir/build.make CMakeFiles/cmTryCompileExec4284764510.dir/build]
+  ignore line: [gmake[1]: 进入目录“/home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp”]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/bin/c++     -o CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec4284764510]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec4284764510.dir/link.txt --verbose=1]
+  ignore line: [/bin/c++        -v CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec4284764510 -rdynamic  ]
+  ignore line: [使用内建 specs。]
+  ignore line: [COLLECT_GCC=/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/lto-wrapper]
+  ignore line: [目标：x86_64-redhat-linux]
+  ignore line: [配置为：../configure --prefix=/usr --mandir=/usr/share/man --infodir=/usr/share/info --with-bugurl=http://bugzilla.redhat.com/bugzilla --enable-bootstrap --enable-shared --enable-threads=posix --enable-checking=release --with-system-zlib --enable-__cxa_atexit --disable-libunwind-exceptions --enable-gnu-unique-object --enable-linker-build-id --with-linker-hash-style=gnu --enable-languages=c,c++,objc,obj-c++,java,fortran,ada,go,lto --enable-plugin --enable-initfini-array --disable-libgcj --with-isl=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/isl-install --with-cloog=/builddir/build/BUILD/gcc-4.8.3-20140911/obj-x86_64-redhat-linux/cloog-install --enable-gnu-indirect-function --with-tune=generic --with-arch_32=x86-64 --build=x86_64-redhat-linux]
+  ignore line: [线程模型：posix]
+  ignore line: [gcc 版本 4.8.3 20140911 (Red Hat 4.8.3-9) (GCC) ]
+  ignore line: [COMPILER_PATH=/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/:/usr/libexec/gcc/x86_64-redhat-linux/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-redhat-linux/4.8.3/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/:/lib/../lib64/:/usr/lib/../lib64/:/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec4284764510' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2 --build-id --no-add-needed --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec4284764510 /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64 -L/lib/../lib64 -L/usr/lib/../lib64 -L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../.. CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o /usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o]
+    arg [/usr/libexec/gcc/x86_64-redhat-linux/4.8.3/collect2] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec4284764510] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crti.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..]
+    arg [CMakeFiles/cmTryCompileExec4284764510.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3] ==> [/usr/lib/gcc/x86_64-redhat-linux/4.8.3]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../../../lib64] ==> [/usr/lib64]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/usr/lib/gcc/x86_64-redhat-linux/4.8.3/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/x86_64-redhat-linux/4.8.3;/usr/lib64;/lib64;/usr/lib]
+  implicit fwks: []
+
+
+The system is: Linux - 3.4.0-g037044b-dirty - armv7l
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/gcc 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/st/toffaletti/armhf/extensions/CMakeFiles/CompilerIdC/a.out"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags: 
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/st/toffaletti/armhf/extensions/CMakeFiles/CompilerIdCXX/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec1528942243/fast"
+make: Warning: File `Makefile' has modification time 0.076 s in the future
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1528942243.dir/build.make CMakeFiles/cmTryCompileExec1528942243.dir/build
+make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: Warning: File `CMakeFiles/cmTryCompileExec1528942243.dir/flags.make' has modification time 0.045 s in the future
+/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1528942243.dir/testCCompiler.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec1528942243.dir/testCCompiler.c.o   -c /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec1528942243
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1528942243.dir/link.txt --verbose=1
+/usr/bin/gcc         CMakeFiles/cmTryCompileExec1528942243.dir/testCCompiler.c.o  -o cmTryCompileExec1528942243 -rdynamic 
+make[1]: Leaving directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: 警告：检测到时钟错误。您的创建可能是不完整的。
+make: 警告：检测到时钟错误。您的创建可能是不完整的。
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec114921819/fast"
+make: Warning: File `Makefile' has modification time 0.078 s in the future
+/usr/bin/make -f CMakeFiles/cmTryCompileExec114921819.dir/build.make CMakeFiles/cmTryCompileExec114921819.dir/build
+make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: Warning: File `CMakeFiles/cmTryCompileExec114921819.dir/flags.make' has modification time 0.044 s in the future
+/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o
+/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec114921819
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec114921819.dir/link.txt --verbose=1
+/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec114921819 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/gcc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 4.6.3 (Debian 4.6.3-14) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec114921819' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec114921819 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: 警告：检测到时钟错误。您的创建可能是不完整的。
+make: 警告：检测到时钟错误。您的创建可能是不完整的。
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec114921819/fast"]
+  ignore line: [make: Warning: File `Makefile' has modification time 0.078 s in the future]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec114921819.dir/build.make CMakeFiles/cmTryCompileExec114921819.dir/build]
+  ignore line: [make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp']
+  ignore line: [make[1]: Warning: File `CMakeFiles/cmTryCompileExec114921819.dir/flags.make' has modification time 0.044 s in the future]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec114921819]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec114921819.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec114921819 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/gcc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.6.3 (Debian 4.6.3-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec114921819' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec114921819 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec114921819] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTryCompileExec114921819.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--no-as-needed] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [c]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec2453608391/fast"
+make: Warning: File `Makefile' has modification time 0.077 s in the future
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2453608391.dir/build.make CMakeFiles/cmTryCompileExec2453608391.dir/build
+make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: Warning: File `CMakeFiles/cmTryCompileExec2453608391.dir/flags.make' has modification time 0.043 s in the future
+/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2453608391.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec2453608391.dir/testCXXCompiler.cxx.o -c /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec2453608391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec2453608391.dir/link.txt --verbose=1
+/usr/bin/c++          CMakeFiles/cmTryCompileExec2453608391.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec2453608391 -rdynamic 
+make[1]: Leaving directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: 警告：检测到时钟错误。您的创建可能是不完整的。
+make: 警告：检测到时钟错误。您的创建可能是不完整的。
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp
+
+Run Build Command:/usr/bin/make "cmTryCompileExec6351841/fast"
+make: Warning: File `Makefile' has modification time 0.075 s in the future
+/usr/bin/make -f CMakeFiles/cmTryCompileExec6351841.dir/build.make CMakeFiles/cmTryCompileExec6351841.dir/build
+make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: Warning: File `CMakeFiles/cmTryCompileExec6351841.dir/flags.make' has modification time 0.039 s in the future
+/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec6351841
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec6351841.dir/link.txt --verbose=1
+/usr/bin/c++        -v CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec6351841 -rdynamic  
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
+Target: arm-linux-gnueabihf
+Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+Thread model: posix
+gcc version 4.6.3 (Debian 4.6.3-14) 
+COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
+LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec6351841' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb'
+ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec6351841 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
+make[1]: Leaving directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp'
+make[1]: 警告：检测到时钟错误。您的创建可能是不完整的。
+make: 警告：检测到时钟错误。您的创建可能是不完整的。
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec6351841/fast"]
+  ignore line: [make: Warning: File `Makefile' has modification time 0.075 s in the future]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec6351841.dir/build.make CMakeFiles/cmTryCompileExec6351841.dir/build]
+  ignore line: [make[1]: Entering directory `/home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp']
+  ignore line: [make[1]: Warning: File `CMakeFiles/cmTryCompileExec6351841.dir/flags.make' has modification time 0.039 s in the future]
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/st/toffaletti/armhf/extensions/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec6351841]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec6351841.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec6351841 -rdynamic  ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
+  ignore line: [Target: arm-linux-gnueabihf]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Debian 4.6.3-14' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --disable-sjlj-exceptions --with-arch=armv7-a --with-fpu=vfpv3-d16 --with-float=hard --with-mode=thumb --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [Thread model: posix]
+  ignore line: [gcc version 4.6.3 (Debian 4.6.3-14) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/arm-linux-gnueabihf/:/lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec6351841' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb']
+  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=both -m armelf_linux_eabi -o cmTryCompileExec6351841 /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. -L/lib/arm-linux-gnueabihf -L/usr/lib/arm-linux-gnueabihf CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
+    arg [--sysroot=/] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--no-add-needed] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib/ld-linux-armhf.so.3] ==> ignore
+    arg [-X] ==> ignore
+    arg [--hash-style=both] ==> ignore
+    arg [-m] ==> ignore
+    arg [armelf_linux_eabi] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTryCompileExec6351841] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
+    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
+    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
+    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
+    arg [CMakeFiles/cmTryCompileExec6351841.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
+    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+  remove lib [gcc_s]
+  remove lib [gcc]
+  remove lib [gcc_s]
+  remove lib [gcc]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
+  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
+  implicit libs: [stdc++;m;c]
+  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf]
+
+

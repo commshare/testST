@@ -1,0 +1,4 @@
+/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/lookupdns.dir
+/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/server.dir
+/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/st.dir
+/home/zhangbin/live/testST/toffaletti/armnonecross/CMakeFiles/threaded.dir

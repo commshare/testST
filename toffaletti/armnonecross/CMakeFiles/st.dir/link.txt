@@ -1,0 +1,2 @@
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-ar cr libst.a  CMakeFiles/st.dir/md.S.o CMakeFiles/st.dir/event.c.o CMakeFiles/st.dir/io.c.o CMakeFiles/st.dir/key.c.o CMakeFiles/st.dir/sched.c.o CMakeFiles/st.dir/stk.c.o CMakeFiles/st.dir/sync.c.o
+/opt/toolchain/arm-2009q3/bin/arm-none-linux-gnueabi-ranlib libst.a
