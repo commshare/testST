@@ -146,8 +146,8 @@ CMAKE_SKIP_RPATH:BOOL=NO
 //Path to a program.
 CMAKE_STRIP:FILEPATH=/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-strip
 
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/toolschain.cmake
+//No help, variable specified on the command line.
+CMAKE_TOOLCHAIN_FILE:UNINITIALIZED=/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/toolschain.cmake
 
 //If true, cmake will use relative paths in makefiles and projects.
 CMAKE_USE_RELATIVE_PATHS:BOOL=OFF

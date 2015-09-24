@@ -167,7 +167,7 @@ clean: CMakeFiles/st.dir/clean
 CMakeFiles/threaded.dir/all: CMakeFiles/st.dir/all
 	$(MAKE) -f CMakeFiles/threaded.dir/build.make CMakeFiles/threaded.dir/depend
 	$(MAKE) -f CMakeFiles/threaded.dir/build.make CMakeFiles/threaded.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles  17
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles  12
 	@echo "Built target threaded"
 .PHONY : CMakeFiles/threaded.dir/all
 
@@ -199,88 +199,16 @@ clean: CMakeFiles/threaded.dir/clean
 # Directory level rules for directory extensions
 
 # Convenience name for "all" pass in the directory.
-extensions/all: extensions/CMakeFiles/st-ssl.dir/all
-extensions/all: extensions/CMakeFiles/test-cares-st.dir/all
+extensions/all:
 .PHONY : extensions/all
 
 # Convenience name for "clean" pass in the directory.
-extensions/clean: extensions/CMakeFiles/st-ssl.dir/clean
-extensions/clean: extensions/CMakeFiles/test-cares-st.dir/clean
+extensions/clean:
 .PHONY : extensions/clean
 
 # Convenience name for "preinstall" pass in the directory.
 extensions/preinstall:
 .PHONY : extensions/preinstall
-
-#=============================================================================
-# Target rules for target extensions/CMakeFiles/st-ssl.dir
-
-# All Build rule for target.
-extensions/CMakeFiles/st-ssl.dir/all: CMakeFiles/st.dir/all
-	$(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/depend
-	$(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles  12 13 14
-	@echo "Built target st-ssl"
-.PHONY : extensions/CMakeFiles/st-ssl.dir/all
-
-# Include target in all.
-all: extensions/CMakeFiles/st-ssl.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-extensions/CMakeFiles/st-ssl.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles 10
-	$(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/st-ssl.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles 0
-.PHONY : extensions/CMakeFiles/st-ssl.dir/rule
-
-# Convenience name for target.
-st-ssl: extensions/CMakeFiles/st-ssl.dir/rule
-.PHONY : st-ssl
-
-# clean rule for target.
-extensions/CMakeFiles/st-ssl.dir/clean:
-	$(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/clean
-.PHONY : extensions/CMakeFiles/st-ssl.dir/clean
-
-# clean rule for target.
-clean: extensions/CMakeFiles/st-ssl.dir/clean
-.PHONY : clean
-
-#=============================================================================
-# Target rules for target extensions/CMakeFiles/test-cares-st.dir
-
-# All Build rule for target.
-extensions/CMakeFiles/test-cares-st.dir/all: CMakeFiles/st.dir/all
-	$(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/depend
-	$(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles  15 16
-	@echo "Built target test-cares-st"
-.PHONY : extensions/CMakeFiles/test-cares-st.dir/all
-
-# Include target in all.
-all: extensions/CMakeFiles/test-cares-st.dir/all
-.PHONY : all
-
-# Build rule for subdir invocation for target.
-extensions/CMakeFiles/test-cares-st.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles 9
-	$(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/test-cares-st.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles 0
-.PHONY : extensions/CMakeFiles/test-cares-st.dir/rule
-
-# Convenience name for target.
-test-cares-st: extensions/CMakeFiles/test-cares-st.dir/rule
-.PHONY : test-cares-st
-
-# clean rule for target.
-extensions/CMakeFiles/test-cares-st.dir/clean:
-	$(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/clean
-.PHONY : extensions/CMakeFiles/test-cares-st.dir/clean
-
-# clean rule for target.
-clean: extensions/CMakeFiles/test-cares-st.dir/clean
-.PHONY : clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

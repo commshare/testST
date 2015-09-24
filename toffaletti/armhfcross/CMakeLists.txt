@@ -15,6 +15,13 @@ set(CMAKE_C_FLAGS
 
 add_definitions(-DMD_HAVE_EPOLL -DLINUX -D_GNU_SOURCE)
 
+####需要openssl
+#/home/zhangbin/nuf/nfshome/st/out
+set(OPENSSL_PATH "/home/zhangbin/nuf/nfshome/st/out")
+include_directories("${OPENSSL_PATH}/include")
+####
+
+
 # check for valgrind. this should really be in FindValgrind.cmake
 # http://www.itk.org/Wiki/CMake:How_To_Find_Installed_Software
 find_file(VALGRIND_H valgrind.h /usr/include/valgrind /usr/local/include/valgrind)

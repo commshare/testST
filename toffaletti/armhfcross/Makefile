@@ -153,32 +153,6 @@ threaded/fast:
 	$(MAKE) -f CMakeFiles/threaded.dir/build.make CMakeFiles/threaded.dir/build
 .PHONY : threaded/fast
 
-#=============================================================================
-# Target rules for targets named st-ssl
-
-# Build rule for target.
-st-ssl: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 st-ssl
-.PHONY : st-ssl
-
-# fast build rule for target.
-st-ssl/fast:
-	$(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/build
-.PHONY : st-ssl/fast
-
-#=============================================================================
-# Target rules for targets named test-cares-st
-
-# Build rule for target.
-test-cares-st: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 test-cares-st
-.PHONY : test-cares-st
-
-# fast build rule for target.
-test-cares-st/fast:
-	$(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/build
-.PHONY : test-cares-st/fast
-
 event.o: event.c.o
 .PHONY : event.o
 
@@ -479,8 +453,6 @@ help:
 	@echo "... server"
 	@echo "... st"
 	@echo "... threaded"
-	@echo "... st-ssl"
-	@echo "... test-cares-st"
 	@echo "... event.o"
 	@echo "... event.i"
 	@echo "... event.s"

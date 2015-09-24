@@ -1,6 +1,4 @@
 /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/lookupdns.dir
 /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/server.dir
 /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/st.dir
-/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/st-ssl.dir
-/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/test-cares-st.dir
 /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/threaded.dir
