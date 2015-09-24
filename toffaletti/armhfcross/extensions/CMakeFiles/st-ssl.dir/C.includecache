@@ -6,21 +6,21 @@
 
 #IncludeRegexTransform: 
 
-/home/st/toffaletti/armhf/extensions/bio_netfd.c
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/bio_netfd.c
 openssl/ssl.h
 -
 st_ssl.h
-/home/st/toffaletti/armhf/extensions/st_ssl.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_ssl.h
 st_dns.h
-/home/st/toffaletti/armhf/extensions/st_dns.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_dns.h
 arpa/inet.h
 -
 
-/home/st/toffaletti/armhf/extensions/cares-st.c
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c
 st.h
-/home/st/toffaletti/armhf/extensions/st.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st.h
 st_dns.h
-/home/st/toffaletti/armhf/extensions/st_dns.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_dns.h
 ares.h
 -
 stdio.h
@@ -40,15 +40,15 @@ arpa/inet.h
 netdb.h
 -
 
-/home/st/toffaletti/armhf/extensions/ssl.c
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/ssl.c
 st_ssl.h
-/home/st/toffaletti/armhf/extensions/st_ssl.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_ssl.h
 openssl/ssl.h
 -
 openssl/err.h
 -
 
-/home/st/toffaletti/armhf/extensions/st_dns.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_dns.h
 ares.h
 -
 arpa/inet.h
@@ -56,11 +56,11 @@ arpa/inet.h
 netdb.h
 -
 
-/home/st/toffaletti/armhf/extensions/st_ssl.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st_ssl.h
 openssl/bio.h
 -
 st.h
-/home/st/toffaletti/armhf/extensions/st.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/st.h
 
 st.h
 unistd.h

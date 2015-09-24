@@ -1,16 +1,16 @@
-set(CMAKE_C_COMPILER "/bin/cc")
+set(CMAKE_C_COMPILER "/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc")
 set(CMAKE_C_COMPILER_ARG1 "")
 set(CMAKE_C_COMPILER_ID "GNU")
-set(CMAKE_C_COMPILER_VERSION "4.8.3")
+set(CMAKE_C_COMPILER_VERSION "4.9.3")
 set(CMAKE_C_PLATFORM_ID "Linux")
 
-set(CMAKE_AR "/bin/ar")
-set(CMAKE_RANLIB "/bin/ranlib")
-set(CMAKE_LINKER "/bin/ld")
+set(CMAKE_AR "/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar")
+set(CMAKE_RANLIB "/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ranlib")
+set(CMAKE_LINKER "/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ld")
 set(CMAKE_COMPILER_IS_GNUCC 1)
 set(CMAKE_C_COMPILER_LOADED 1)
-set(CMAKE_C_COMPILER_WORKS )
-set(CMAKE_C_ABI_COMPILED )
+set(CMAKE_C_COMPILER_WORKS TRUE)
+set(CMAKE_C_ABI_COMPILED TRUE)
 set(CMAKE_COMPILER_IS_MINGW )
 set(CMAKE_COMPILER_IS_CYGWIN )
 if(CMAKE_COMPILER_IS_CYGWIN)
@@ -29,8 +29,8 @@ set(CMAKE_C_IGNORE_EXTENSIONS h;H;o;O;obj;OBJ;def;DEF;rc;RC)
 set(CMAKE_C_LINKER_PREFERENCE 10)
 
 # Save compiler ABI information.
-set(CMAKE_C_SIZEOF_DATA_PTR "")
-set(CMAKE_C_COMPILER_ABI "")
+set(CMAKE_C_SIZEOF_DATA_PTR "4")
+set(CMAKE_C_COMPILER_ABI "ELF")
 set(CMAKE_C_LIBRARY_ARCHITECTURE "")
 
 if(CMAKE_C_SIZEOF_DATA_PTR)
@@ -48,8 +48,8 @@ endif()
 
 
 
-set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "")
-set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "")
+set(CMAKE_C_IMPLICIT_LINK_LIBRARIES "c")
+set(CMAKE_C_IMPLICIT_LINK_DIRECTORIES "/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf/4.9.3;/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/lib/gcc/arm-linux-gnueabihf;/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/lib/gcc;/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/arm-linux-gnueabihf/lib;/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/libc/lib;/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/libc/usr/lib")
 set(CMAKE_C_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "")
 
 

@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 # Include any dependencies generated for this target.
 include extensions/CMakeFiles/st-ssl.dir/depend.make
@@ -51,17 +54,17 @@ include extensions/CMakeFiles/st-ssl.dir/flags.make
 
 extensions/CMakeFiles/st-ssl.dir/ssl.c.o: extensions/CMakeFiles/st-ssl.dir/flags.make
 extensions/CMakeFiles/st-ssl.dir/ssl.c.o: extensions/ssl.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object extensions/CMakeFiles/st-ssl.dir/ssl.c.o"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/ssl.c.o   -c /home/st/toffaletti/armhf/extensions/ssl.c
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/ssl.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/ssl.c
 
 extensions/CMakeFiles/st-ssl.dir/ssl.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st-ssl.dir/ssl.c.i"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/extensions/ssl.c > CMakeFiles/st-ssl.dir/ssl.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/ssl.c > CMakeFiles/st-ssl.dir/ssl.c.i
 
 extensions/CMakeFiles/st-ssl.dir/ssl.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st-ssl.dir/ssl.c.s"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/extensions/ssl.c -o CMakeFiles/st-ssl.dir/ssl.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/ssl.c -o CMakeFiles/st-ssl.dir/ssl.c.s
 
 extensions/CMakeFiles/st-ssl.dir/ssl.c.o.requires:
 .PHONY : extensions/CMakeFiles/st-ssl.dir/ssl.c.o.requires
@@ -74,17 +77,17 @@ extensions/CMakeFiles/st-ssl.dir/ssl.c.o.provides.build: extensions/CMakeFiles/s
 
 extensions/CMakeFiles/st-ssl.dir/cares-st.c.o: extensions/CMakeFiles/st-ssl.dir/flags.make
 extensions/CMakeFiles/st-ssl.dir/cares-st.c.o: extensions/cares-st.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object extensions/CMakeFiles/st-ssl.dir/cares-st.c.o"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/cares-st.c.o   -c /home/st/toffaletti/armhf/extensions/cares-st.c
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/cares-st.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c
 
 extensions/CMakeFiles/st-ssl.dir/cares-st.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st-ssl.dir/cares-st.c.i"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/extensions/cares-st.c > CMakeFiles/st-ssl.dir/cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c > CMakeFiles/st-ssl.dir/cares-st.c.i
 
 extensions/CMakeFiles/st-ssl.dir/cares-st.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st-ssl.dir/cares-st.c.s"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/extensions/cares-st.c -o CMakeFiles/st-ssl.dir/cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c -o CMakeFiles/st-ssl.dir/cares-st.c.s
 
 extensions/CMakeFiles/st-ssl.dir/cares-st.c.o.requires:
 .PHONY : extensions/CMakeFiles/st-ssl.dir/cares-st.c.o.requires
@@ -97,17 +100,17 @@ extensions/CMakeFiles/st-ssl.dir/cares-st.c.o.provides.build: extensions/CMakeFi
 
 extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o: extensions/CMakeFiles/st-ssl.dir/flags.make
 extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o: extensions/bio_netfd.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_3)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles $(CMAKE_PROGRESS_3)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/bio_netfd.c.o   -c /home/st/toffaletti/armhf/extensions/bio_netfd.c
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/st-ssl.dir/bio_netfd.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/bio_netfd.c
 
 extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/st-ssl.dir/bio_netfd.c.i"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/extensions/bio_netfd.c > CMakeFiles/st-ssl.dir/bio_netfd.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/bio_netfd.c > CMakeFiles/st-ssl.dir/bio_netfd.c.i
 
 extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/st-ssl.dir/bio_netfd.c.s"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/extensions/bio_netfd.c -o CMakeFiles/st-ssl.dir/bio_netfd.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/bio_netfd.c -o CMakeFiles/st-ssl.dir/bio_netfd.c.s
 
 extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o.requires:
 .PHONY : extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o.requires
@@ -134,7 +137,7 @@ extensions/st-ssl: extensions/CMakeFiles/st-ssl.dir/build.make
 extensions/st-ssl: libst.a
 extensions/st-ssl: extensions/CMakeFiles/st-ssl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable st-ssl"
-	cd /home/st/toffaletti/armhf/extensions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/st-ssl.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/st-ssl.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 extensions/CMakeFiles/st-ssl.dir/build: extensions/st-ssl
@@ -146,10 +149,10 @@ extensions/CMakeFiles/st-ssl.dir/requires: extensions/CMakeFiles/st-ssl.dir/bio_
 .PHONY : extensions/CMakeFiles/st-ssl.dir/requires
 
 extensions/CMakeFiles/st-ssl.dir/clean:
-	cd /home/st/toffaletti/armhf/extensions && $(CMAKE_COMMAND) -P CMakeFiles/st-ssl.dir/cmake_clean.cmake
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && $(CMAKE_COMMAND) -P CMakeFiles/st-ssl.dir/cmake_clean.cmake
 .PHONY : extensions/CMakeFiles/st-ssl.dir/clean
 
 extensions/CMakeFiles/st-ssl.dir/depend:
-	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/st/toffaletti/armhf /home/st/toffaletti/armhf/extensions /home/st/toffaletti/armhf /home/st/toffaletti/armhf/extensions /home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/st-ssl.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : extensions/CMakeFiles/st-ssl.dir/depend
 

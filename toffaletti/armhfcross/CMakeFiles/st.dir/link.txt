@@ -1,0 +1,2 @@
+/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ar cr libst.a  CMakeFiles/st.dir/md.S.o CMakeFiles/st.dir/event.c.o CMakeFiles/st.dir/io.c.o CMakeFiles/st.dir/key.c.o CMakeFiles/st.dir/sched.c.o CMakeFiles/st.dir/stk.c.o CMakeFiles/st.dir/sync.c.o
+/home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-ranlib libst.a

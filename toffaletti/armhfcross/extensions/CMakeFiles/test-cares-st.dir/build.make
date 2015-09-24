@@ -34,11 +34,14 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 # Include any dependencies generated for this target.
 include extensions/CMakeFiles/test-cares-st.dir/depend.make
@@ -51,17 +54,17 @@ include extensions/CMakeFiles/test-cares-st.dir/flags.make
 
 extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o: extensions/CMakeFiles/test-cares-st.dir/flags.make
 extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o: extensions/test-cares-st.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_1)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-cares-st.dir/test-cares-st.c.o   -c /home/st/toffaletti/armhf/extensions/test-cares-st.c
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-cares-st.dir/test-cares-st.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/test-cares-st.c
 
 extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test-cares-st.dir/test-cares-st.c.i"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/extensions/test-cares-st.c > CMakeFiles/test-cares-st.dir/test-cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/test-cares-st.c > CMakeFiles/test-cares-st.dir/test-cares-st.c.i
 
 extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test-cares-st.dir/test-cares-st.c.s"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/extensions/test-cares-st.c -o CMakeFiles/test-cares-st.dir/test-cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/test-cares-st.c -o CMakeFiles/test-cares-st.dir/test-cares-st.c.s
 
 extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o.requires:
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o.requires
@@ -74,17 +77,17 @@ extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o.provides.build: extens
 
 extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o: extensions/CMakeFiles/test-cares-st.dir/flags.make
 extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o: extensions/cares-st.c
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/st/toffaletti/armhf/CMakeFiles $(CMAKE_PROGRESS_2)
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles $(CMAKE_PROGRESS_2)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building C object extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-cares-st.dir/cares-st.c.o   -c /home/st/toffaletti/armhf/extensions/cares-st.c
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -o CMakeFiles/test-cares-st.dir/cares-st.c.o   -c /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c
 
 extensions/CMakeFiles/test-cares-st.dir/cares-st.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/test-cares-st.dir/cares-st.c.i"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -E /home/st/toffaletti/armhf/extensions/cares-st.c > CMakeFiles/test-cares-st.dir/cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -E /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c > CMakeFiles/test-cares-st.dir/cares-st.c.i
 
 extensions/CMakeFiles/test-cares-st.dir/cares-st.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/test-cares-st.dir/cares-st.c.s"
-	cd /home/st/toffaletti/armhf/extensions && /usr/bin/gcc  $(C_DEFINES) $(C_FLAGS) -S /home/st/toffaletti/armhf/extensions/cares-st.c -o CMakeFiles/test-cares-st.dir/cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && /home/zhangbin/android/tools/gcc-linaro-4.9-2014.11-x86_64_arm-linux-gnueabihf/bin/arm-linux-gnueabihf-gcc  $(C_DEFINES) $(C_FLAGS) -S /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c -o CMakeFiles/test-cares-st.dir/cares-st.c.s
 
 extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o.requires:
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o.requires
@@ -109,7 +112,7 @@ extensions/test-cares-st: extensions/CMakeFiles/test-cares-st.dir/build.make
 extensions/test-cares-st: libst.a
 extensions/test-cares-st: extensions/CMakeFiles/test-cares-st.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --red --bold "Linking C executable test-cares-st"
-	cd /home/st/toffaletti/armhf/extensions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-cares-st.dir/link.txt --verbose=$(VERBOSE)
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/test-cares-st.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 extensions/CMakeFiles/test-cares-st.dir/build: extensions/test-cares-st
@@ -120,10 +123,10 @@ extensions/CMakeFiles/test-cares-st.dir/requires: extensions/CMakeFiles/test-car
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/requires
 
 extensions/CMakeFiles/test-cares-st.dir/clean:
-	cd /home/st/toffaletti/armhf/extensions && $(CMAKE_COMMAND) -P CMakeFiles/test-cares-st.dir/cmake_clean.cmake
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions && $(CMAKE_COMMAND) -P CMakeFiles/test-cares-st.dir/cmake_clean.cmake
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/clean
 
 extensions/CMakeFiles/test-cares-st.dir/depend:
-	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/st/toffaletti/armhf /home/st/toffaletti/armhf/extensions /home/st/toffaletti/armhf /home/st/toffaletti/armhf/extensions /home/st/toffaletti/armhf/extensions/CMakeFiles/test-cares-st.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/test-cares-st.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/depend
 

@@ -1,0 +1,34 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/examples/threaded.c
+stdio.h
+-
+stdlib.h
+-
+pthread.h
+-
+st.h
+/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/examples/st.h
+
+st.h
+unistd.h
+-
+sys/types.h
+-
+sys/socket.h
+-
+sys/uio.h
+-
+time.h
+-
+errno.h
+-
+poll.h
+-
+

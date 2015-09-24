@@ -38,19 +38,22 @@ RM = /usr/bin/cmake -E remove -f
 # Escaping for special characters.
 EQUALS = =
 
+# The program to use to edit the cache.
+CMAKE_EDIT_COMMAND = /usr/bin/ccmake
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/st/toffaletti/armhf
+CMAKE_SOURCE_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/st/toffaletti/armhf
+CMAKE_BINARY_DIR = /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross
 
 #=============================================================================
 # Targets provided globally by CMake.
 
 # Special rule for the target edit_cache
 edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running interactive CMake command-line interface..."
-	/usr/bin/cmake -i .
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
+	/usr/bin/ccmake -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
 .PHONY : edit_cache
 
 # Special rule for the target edit_cache
@@ -69,14 +72,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -E cmake_progress_start /home/st/toffaletti/armhf/CMakeFiles /home/st/toffaletti/armhf/extensions/CMakeFiles/progress.marks
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/st/toffaletti/armhf/CMakeFiles 0
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/progress.marks
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/clean
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/clean
 .PHONY : clean
 
 # The main clean target
@@ -85,22 +88,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/preinstall
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/preinstall
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 extensions/CMakeFiles/st-ssl.dir/rule:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/st-ssl.dir/rule
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/st-ssl.dir/rule
 .PHONY : extensions/CMakeFiles/st-ssl.dir/rule
 
 # Convenience name for target.
@@ -109,12 +112,12 @@ st-ssl: extensions/CMakeFiles/st-ssl.dir/rule
 
 # fast build rule for target.
 st-ssl/fast:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/build
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/build
 .PHONY : st-ssl/fast
 
 # Convenience name for target.
 extensions/CMakeFiles/test-cares-st.dir/rule:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/test-cares-st.dir/rule
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f CMakeFiles/Makefile2 extensions/CMakeFiles/test-cares-st.dir/rule
 .PHONY : extensions/CMakeFiles/test-cares-st.dir/rule
 
 # Convenience name for target.
@@ -123,7 +126,7 @@ test-cares-st: extensions/CMakeFiles/test-cares-st.dir/rule
 
 # fast build rule for target.
 test-cares-st/fast:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/build
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/build
 .PHONY : test-cares-st/fast
 
 bio_netfd.o: bio_netfd.c.o
@@ -131,7 +134,7 @@ bio_netfd.o: bio_netfd.c.o
 
 # target to build an object file
 bio_netfd.c.o:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o
 .PHONY : bio_netfd.c.o
 
 bio_netfd.i: bio_netfd.c.i
@@ -139,7 +142,7 @@ bio_netfd.i: bio_netfd.c.i
 
 # target to preprocess a source file
 bio_netfd.c.i:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.i
 .PHONY : bio_netfd.c.i
 
 bio_netfd.s: bio_netfd.c.s
@@ -147,7 +150,7 @@ bio_netfd.s: bio_netfd.c.s
 
 # target to generate assembly for a file
 bio_netfd.c.s:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.s
 .PHONY : bio_netfd.c.s
 
 cares-st.o: cares-st.c.o
@@ -155,8 +158,8 @@ cares-st.o: cares-st.c.o
 
 # target to build an object file
 cares-st.c.o:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.o
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.o
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.o
 .PHONY : cares-st.c.o
 
 cares-st.i: cares-st.c.i
@@ -164,8 +167,8 @@ cares-st.i: cares-st.c.i
 
 # target to preprocess a source file
 cares-st.c.i:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.i
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.i
 .PHONY : cares-st.c.i
 
 cares-st.s: cares-st.c.s
@@ -173,8 +176,8 @@ cares-st.s: cares-st.c.s
 
 # target to generate assembly for a file
 cares-st.c.s:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.s
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/cares-st.c.s
 .PHONY : cares-st.c.s
 
 ssl.o: ssl.c.o
@@ -182,7 +185,7 @@ ssl.o: ssl.c.o
 
 # target to build an object file
 ssl.c.o:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.o
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.o
 .PHONY : ssl.c.o
 
 ssl.i: ssl.c.i
@@ -190,7 +193,7 @@ ssl.i: ssl.c.i
 
 # target to preprocess a source file
 ssl.c.i:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.i
 .PHONY : ssl.c.i
 
 ssl.s: ssl.c.s
@@ -198,7 +201,7 @@ ssl.s: ssl.c.s
 
 # target to generate assembly for a file
 ssl.c.s:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/st-ssl.dir/build.make extensions/CMakeFiles/st-ssl.dir/ssl.c.s
 .PHONY : ssl.c.s
 
 test-cares-st.o: test-cares-st.c.o
@@ -206,7 +209,7 @@ test-cares-st.o: test-cares-st.c.o
 
 # target to build an object file
 test-cares-st.c.o:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.o
 .PHONY : test-cares-st.c.o
 
 test-cares-st.i: test-cares-st.c.i
@@ -214,7 +217,7 @@ test-cares-st.i: test-cares-st.c.i
 
 # target to preprocess a source file
 test-cares-st.c.i:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.i
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.i
 .PHONY : test-cares-st.c.i
 
 test-cares-st.s: test-cares-st.c.s
@@ -222,7 +225,7 @@ test-cares-st.s: test-cares-st.c.s
 
 # target to generate assembly for a file
 test-cares-st.c.s:
-	cd /home/st/toffaletti/armhf && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.s
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(MAKE) -f extensions/CMakeFiles/test-cares-st.dir/build.make extensions/CMakeFiles/test-cares-st.dir/test-cares-st.c.s
 .PHONY : test-cares-st.c.s
 
 # Help Target
@@ -258,6 +261,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/st/toffaletti/armhf && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,24 +4,23 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_C
-  "/home/st/toffaletti/armhf/extensions/bio_netfd.c" "/home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o"
-  "/home/st/toffaletti/armhf/extensions/cares-st.c" "/home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir/cares-st.c.o"
-  "/home/st/toffaletti/armhf/extensions/ssl.c" "/home/st/toffaletti/armhf/extensions/CMakeFiles/st-ssl.dir/ssl.c.o"
+  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/bio_netfd.c" "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/st-ssl.dir/bio_netfd.c.o"
+  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/cares-st.c" "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/st-ssl.dir/cares-st.c.o"
+  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/ssl.c" "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/extensions/CMakeFiles/st-ssl.dir/ssl.c.o"
   )
 SET(CMAKE_C_COMPILER_ID "GNU")
 
 # Preprocessor definitions for this target.
 SET(CMAKE_TARGET_DEFINITIONS
-  "MD_HAVE_EPOLL"
   "LINUX"
-  "_GNU_SOURCE"
+  "MD_HAVE_EPOLL"
   "NVALGRIND"
   "_GNU_SOURCE"
   )
 
 # Targets to which this target links.
 SET(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/st/toffaletti/armhf/CMakeFiles/st.dir/DependInfo.cmake"
+  "/home/zhangbin/nuf/nfshome/st/toffaletti/armhfcross/CMakeFiles/st.dir/DependInfo.cmake"
   )
 
 # The include file search paths:
